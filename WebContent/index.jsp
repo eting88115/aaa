@@ -11,16 +11,7 @@
 <link rel="stylesheet" href="css\styles2.css" >
 <link rel="stylesheet" href="css\styles3.css" >
 <link rel="stylesheet" href="css\styles4.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
-</style>
+<link rel="stylesheet" href="css\styles5.css">
 </head>
 <body>
 
@@ -39,18 +30,24 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 </div>
 
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+ <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
+     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>歡迎使用本系統</b></h4>
-  <p>帳號</p>
-  <input type="email" name="username" placeholder="Username" required="required" />
-  <p>密碼</p>
-  <input type="password" name="password" placeholder="Confirm Password" required="required" />
-  <br></br><button type="button">登入</button>
-  <br></br><a href="#">註冊帳號</a><br></br><a href="#">忘記密碼</a>
-</nav>
+     <p>帳號:&emsp;<input type="email" id="username" placeholder="Username" required="required" />
+     <br></br>密碼:&emsp;<input type="password" id="password" placeholder="Confirm Password" required="required" />
+     </p>
+     <div class="login-button" align="center">
+     <button>登入</button>
+     </div>
+     <div class="solve" align="center">
+     <p><a href="#" id="first-time">註冊帳號</a>&emsp;&emsp;<a href="#" id="forget">忘記密碼</a></p>
+     </div>
+     <div class="note" align="center">
+     <p id="note">登入後即可使用該系統功能</p>
+     </div>
+ </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -97,7 +94,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>Copyright 2020國立臺北護理健康大學健康事業管理系所 醫療資訊管理學程 設計團隊：黃荷心。謝芸蘋。廖于婷。吳宜靜。 指導：李麗惠老師 請尊重智慧財產權，勿上傳未經授權之檔案資料。</h4>
+      <h5>Copyright 2020國立臺北護理健康大學健康事業管理系所 醫療資訊管理學程 設計團隊：黃荷心。謝芸蘋。廖于婷。吳宜靜。 指導：李麗惠老師 請尊重智慧財產權，勿上傳未經授權之檔案資料。</h5>
     </div>
 
     <div class="w3-container w3-theme-l1">

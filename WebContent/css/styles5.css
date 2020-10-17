@@ -1,0 +1,58 @@
+html,body,h1,h2,h3,h5,h6 {
+	font-family: "Roboto", sans-serif;
+}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+h4{
+	position:relative;
+	left: 30px;
+	botton: -15px;
+	color:#FF2D2D;
+	font-size:20px;
+	font-weight: 900;
+}
+p{
+	font-size:15px;
+}
+#username{
+	font-size:15px;
+}
+#password{
+	font-size:15px;
+}
+.login-button{
+	position:relative;
+	left: 5px;
+}
+button{
+	width: 160px;
+	height: 30px;
+	font-size:15px;
+}
+.solve{
+	position:relative;
+	left: 10px;
+	top:-5px
+}
+#first-time{
+	color:#0000C6;
+	font-size:85%;
+}
+
+#forget{
+	color:#0000C6;
+	font-size:85%;
+}
+.note{
+	position:relative;
+	left: 5px;
+	top:-5px
+}
+#note{
+	font-size:75%;
+}
