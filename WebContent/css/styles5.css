@@ -1,5 +1,31 @@
-html,body,h1,h2,h3,h5,h6 {
+html,body,h1,h3,h5,h6 {
 	font-family: "Roboto", sans-serif;
+}
+h1,h3,h4,h5,h6{
+	font-family:"Segoe UI",Arial,sans-serif;
+	font-weight:400;
+	margin:10px 0
+}
+h1{
+	font-size:36px;
+}
+h2{
+	font-size:30px;
+}
+h3{
+	font-size:24px;
+}
+h5{
+	font-size:13px;
+}
+h6{
+	font-size:16px;
+}
+.w3-serif{
+	font-family:serif;
+}
+.w3-wide{
+	letter-spacing:4px;
 }
 .w3-sidebar {
   z-index: 3;
@@ -54,4 +80,12 @@ button{
 }
 #note{
 	font-size:75%;
+}
+.statute{
+	color:#000!important;
+	font-size:120%;
+}
+.news{
+	color:#000!important;
+	font-size:120%;
 }

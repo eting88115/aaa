@@ -56,30 +56,36 @@
 <div class="w3-main" style="margin-left:250px">
 
   <div class="w3-row w3-padding-64">
-    <div class="form-fields d-grid">
-    
-</div>
-    
+    <div class="form-fields d-grid"> 
+    </div>
   </div>
 
   <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="post" align="center">
+      <h1 class="w3-text-teal"><b>公告資訊</b></h1>
     </div>
-    
-  </div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    
-  </div>
-
+        <div class="w3-twothird w3-container">
+        <h2 class="statute"><b>宿舍相關法規</b></h2>
+        </div>
+            <div class="w3-twothird w3-container">
+              <ul>
+              <li><a href="#">[109-04-27]宿舍申請作業資訊</a></li>
+              <li><a href="#">[109-04-27]學生宿舍住宿規則</a></li>
+              <li><a href="#">[109-04-27]學生宿舍生活自治評鑑記點標準</a></li>
+              <li><a href="#">[109-04-27]學生宿舍應注意事項暨生活公約</a></li>
+              </ul>
+            </div>
+        <div class="w3-twothird w3-container">
+        <h2 class="news"><b>最新消息</b></h2>
+        </div>
+            <div class="w3-twothird w3-container">
+              <ul>
+              <li><a href="#">[109-05-01]學生宿舍住宿費調漲相關說明</a></li>
+              <li><a href="#">[109-05-01]欲以低收入戶或中低收入戶資格申請宿舍保障或優惠注意事項</a></li>
+              </ul>
+            </div>
+   </div>
+   
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
