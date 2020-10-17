@@ -6,6 +6,12 @@ h1,h3,h4,h5,h6{
 	font-weight:400;
 	margin:10px 0
 }
+.logo{
+	background:	#C48888;
+	position: absolute;
+	right: 0;
+	font-size:30px;
+}
 h1{
 	font-size:36px;
 }
