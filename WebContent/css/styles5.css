@@ -56,6 +56,9 @@ p{
 #password{
 	font-size:15px;
 }
+#email{
+	width: 260px;
+}
 .login-button{
 	position:relative;
 	left: 5px;
@@ -94,4 +97,8 @@ button{
 .news{
 	color:#000!important;
 	font-size:120%;
+}
+.sure-button{
+	position:relative;
+	left: 45px;
 }
