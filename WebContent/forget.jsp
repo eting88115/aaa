@@ -24,6 +24,7 @@
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">宿舍申請表</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">選床位專區</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">校網-宿舍專區</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">常見問題Q&A</a>
   </div>
 </div>
 
