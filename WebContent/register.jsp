@@ -40,7 +40,7 @@
   </div>
 
   <div class="w3-row" style="height:400px">
-    <div class="post" style=" margin-left: 500px">
+    <div class="post" style=" margin-left: 600px">
       <h1 class="w3-text-teal"><b>µù¥U±b¸¹</b></h1>
     </div>
          <table>
