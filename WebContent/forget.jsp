@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- Header -->
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
@@ -47,7 +47,8 @@
      <p id="note">登入後即可使用該系統功能</p>
      </div>
  </nav>
-
+ 
+<!-- Header -->
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
@@ -67,14 +68,17 @@
         <h2 class="statute"><b>請輸入您的學號及信箱</b></h2>
         </div>
             <div class="w3-twothird w3-container" style="margin-left: 300px">
-              <p>學號:&emsp;<input type="email" id="username" placeholder="Username" required="required" />
-              <br></br>信箱:&emsp;<input type="email" id="email" placeholder="Username" required="required" />
-               </p>
-               <div class="sure-button">
+                <p>學號:&emsp;<input type="email" id="username" placeholder="Username" required="required" />
+                <br></br>信箱:&emsp;<input type="email" id="email" placeholder="Username" required="required" />
+                </p>
+                <div class="sure-button">
                 <button>確認</button>
                 </div>
             </div>
-</div>
+  </div>
+
+<!-- Footer -->
+
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
       <h5>Copyright 2020國立臺北護理健康大學健康事業管理系所 醫療資訊管理學程 設計團隊：黃荷心。謝芸蘋。廖于婷。吳宜靜。 指導：李麗惠老師 請尊重智慧財產權，勿上傳未經授權之檔案資料。</h5>

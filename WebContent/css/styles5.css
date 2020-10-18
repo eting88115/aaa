@@ -102,3 +102,26 @@ button{
 	position:relative;
 	left: 45px;
 }
+table{
+    rules: none;
+    border-collapse:collapse; 
+    line-height:20px;
+    position:relative;
+	left: 200px;
+	letter-spacing:5px;
+}
+td{
+    border:5px;
+    background-color:white;
+    padding:0 0 0 0;
+    width:450px;
+    height:20px;
+}
+.login-button2{
+	position:relative;
+	left: 470px;
+	top: 35px;
+}
+input[name=email],[name=address]{
+	width:280px;
+}
