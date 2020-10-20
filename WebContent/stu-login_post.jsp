@@ -33,22 +33,18 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
      <i class="fa fa-remove"></i>
   </a>
-  <h4 class="w3-bar-item"><b>歡迎使用本系統</b></h4>
+  <h4 class="w3-bar-item"><b>王大明同學 你好</b></h4>
      <form action="">
-        <label for="fname">帳號:</label>
-        <input type="text" id="username" placeholder="請輸入學號" required="required"><br><br>
-        <label for="lname">密碼:</label>
-        <input type="text" id="password" placeholder="請輸入密碼" required="required"><br><br>
-        <div class="login-button">
-          <input type="submit" id="login" value="登入">
+        <div class="activity-time">
+          <ul>
+            <li>送出宿舍申請</li>(4/18~4/25)<br></br>
+            <li>查看申請結果 </li>(4/28)<br></br>
+            <li>床位抽籤</li>(5/1)<br></br>
+            <li>選床位</li>(5/3~5/11)<br></br>
+            <li>候補申請</li>(5/13~5/18)<br></br>
+          </ul>
         </div>
      </form>
-     <div class="solve" align="center">
-     <p><a href="WebContent/META-INF/register.jsp" id="register">註冊帳號</a>&emsp;&emsp; <a href="WebContent/META-INF/forget.jsp" id="forget">忘記密碼</a></p>
-     </div>
-     <div class="note" align="center">
-     <p id="note">登入後即可使用該系統功能</p>
-     </div>
  </nav>
  
 <!-- Header -->

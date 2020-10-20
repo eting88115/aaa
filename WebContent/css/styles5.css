@@ -125,3 +125,11 @@ td{
 input[name=email],[name=address]{
 	width:280px;
 }
+#activity-time{
+	position:relative;
+	left: 15px;
+	font-size:120%;
+}
+li{
+	margin: 2px 0;
+}
