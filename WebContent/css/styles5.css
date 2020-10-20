@@ -63,7 +63,7 @@ p{
 	position:relative;
 	left: 45px;
 }
-#login{
+#login, #logout{
 	width: 160px;
 	height: 30px;
 	font-size:15px;
@@ -129,7 +129,4 @@ input[name=email],[name=address]{
 	position:relative;
 	left: 15px;
 	font-size:120%;
-}
-li{
-	margin: 2px 0;
 }

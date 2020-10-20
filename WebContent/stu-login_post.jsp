@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=BIG5"
     pageEncoding="BIG5"%>
+<?php
+session_start();
+if (isset($_POST['Logout']) && $_POST['Logout'] == "true") {
+    unset($_SESSION['LoginUser']);
+    header("Refresh: 0; url=index.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lanf="en">
 <head>
@@ -43,6 +51,10 @@
             <li>選床位</li>(5/3~5/11)<br></br>
             <li>候補申請</li>(5/13~5/18)<br></br>
           </ul>
+          <div class="login-button">
+            <input type="submit" id="logout" value="登出"/>
+            <input type="hidden" name="Logout" value="true"/><br></br>
+          </div>
         </div>
      </form>
  </nav>
@@ -81,6 +93,8 @@
               <ul>
               <li><a href="#">[109-05-01]學生宿舍住宿費調漲相關說明</a></li>
               <li><a href="#">[109-05-01]欲以低收入戶或中低收入戶資格申請宿舍保障或優惠注意事項</a></li>
+              <li><a href="#">[109-04-28]109學年度校本部學生宿舍申請審核結果公告</a></li>
+              <li><a href="#">[109-04-11]109學年度校本部學生宿舍開放申請床位數</a></li>
               </ul>
             </div>
    </div>
