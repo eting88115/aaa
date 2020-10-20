@@ -34,12 +34,15 @@
      <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>歡迎使用本系統</b></h4>
-     <p>帳號:&emsp;<input type="email" id="username" placeholder="Username" required="required" />
-     <br></br>密碼:&emsp;<input type="password" id="password" placeholder="Confirm Password" required="required" />
-     </p>
-     <div class="login-button" align="center">
-     <button>登入</button>
-     </div>
+         <form action="">
+        <label for="fname">帳號:</label>
+        <input type="text" id="username" placeholder="請輸入學號" required="required"><br><br>
+        <label for="lname">密碼:</label>
+        <input type="text" id="password" placeholder="請輸入密碼" required="required"><br><br>
+        <div class="login-button">
+          <input type="submit" id="login" value="登入">
+        </div>
+     </form>
      <div class="solve" align="center">
      <p><a href="WebContent/META-INF/register.jsp" id="register">註冊帳號</a>&emsp;&emsp; <a href="WebContent/META-INF/forget.jsp" id="forget">忘記密碼</a></p>
      </div>

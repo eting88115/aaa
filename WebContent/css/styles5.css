@@ -61,16 +61,16 @@ p{
 }
 .login-button{
 	position:relative;
-	left: 5px;
+	left: 45px;
 }
-button{
+#login{
 	width: 160px;
 	height: 30px;
 	font-size:15px;
 }
 .solve{
 	position:relative;
-	left: 10px;
+	left: 0px;
 	top:-5px
 }
 #register{
@@ -78,13 +78,13 @@ button{
 	font-size:85%;
 }
 
-#forget{
+#forget, #first-time{
 	color:#0000C6;
 	font-size:85%;
 }
 .note{
 	position:relative;
-	left: 5px;
+	right: 3px;
 	top:-5px
 }
 #note{
