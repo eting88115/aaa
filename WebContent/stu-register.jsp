@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lanf="en">
+<html lanf="tc">
 <head>
 <meta charset="BIG5">
 <title>GUAH</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -16,18 +15,7 @@
 <body>
 
 <!-- Header -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="" class="logo">°ê¥ß»O¥_Å@²z°·±d¤j¾Ç-§É¦ì¨t²Î</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">­Ó¤H¸ê®Æ­×§ï</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">±JªÙ¥Ó½Ğªí</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">¿ï§É¦ì±M°Ï</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">®Õºô-±JªÙ±M°Ï</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">±`¨£°İÃDQ&A</a>
-  </div>
-</div>
-
+<%@ include file="menu.jsp" %>
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
@@ -41,63 +29,25 @@
 
   <div class="w3-row" style="height:400px">
     <div class="post" style=" margin-left: 600px">
-      <h1 class="w3-text-teal"><b>µù¥U±b¸¹</b></h1>
+      <h1 class="w3-text-teal"><b>è¨»å†Šå¸³è™Ÿ</b></h1>
     </div>
          <table>
-              <tr><td><label for="name">©m¦W:</label><input type="text" name="name" placeholder="½Ğ¿é¤J©m¦W"></td>
-                  <td><label for="sex">©Ê§O:</label><input type="radio" name="sex" value="male">¨k¥Í<input type="radio" name="sex" value="female">¤k¥Í</td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="account">¾Ç¸¹:</label><input type="text" name="account" placeholder="½Ğ¿é¤J¾Ç¸¹"></td>
-                  <td><label for="education system">¾Ç¨î:</label><select name="education system" id="education system"><option value="1">1</option></select></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="class">¯Z¯Å:</label><select name="class" id="class"><option value="1">1</option></select></td>
-                  <td><label for="department">¬ì¨t:</label><select name="department" id="department"><option value="1">1</option></select></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="phone">¹q¸Ü:</label><input type="text" name="phone" placeholder="½Ğ¿é¤J¹q¸Ü¸¹½X"></td>
-                  <td><label for="name">«H½c:</label><input type="text" name="email" placeholder="½Ğ¿é¤J¹q¤l¶l¥ó"></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="address">¦í§}:</label><input type="text" name="address" placeholder="½Ğ¿é¤J¦í§}"></td>
-                  <td><label for="password">±K½X:</label><input type="text" name="password" placeholder="½Ğ¿é¤J±b¸¹"></td></tr><tr><td></td><td></td></tr> 
+              <tr><td><label for="name">å§“å:</label><input type="text" name="name" placeholder="è«‹è¼¸å…¥å§“å"></td>
+                  <td><label for="sex">æ€§åˆ¥:</label><input type="radio" name="sex" value="male">ç”·ç”Ÿ<input type="radio" name="sex" value="female">å¥³ç”Ÿ</td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="account">å­¸è™Ÿ:</label><input type="text" name="account" placeholder="è«‹è¼¸å…¥å­¸è™Ÿ"></td>
+                  <td><label for="education system">å­¸åˆ¶:</label><select name="education system" id="education system"><option value="1">1</option></select></td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="class">ç­ç´š:</label><select name="class" id="class"><option value="1">1</option></select></td>
+                  <td><label for="department">ç§‘ç³»:</label><select name="department" id="department"><option value="1">1</option></select></td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="phone">é›»è©±:</label><input type="text" name="phone" placeholder="è«‹è¼¸å…¥é›»è©±è™Ÿç¢¼"></td>
+                  <td><label for="name">ä¿¡ç®±:</label><input type="text" name="email" placeholder="è«‹è¼¸å…¥é›»å­éƒµä»¶"></td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="address">ä½å€:</label><input type="text" name="address" placeholder="è«‹è¼¸å…¥ä½å€"></td>
+                  <td><label for="password">å¯†ç¢¼:</label><input type="text" name="password" placeholder="è«‹è¼¸å…¥å¸³è™Ÿ"></td></tr><tr><td></td><td></td></tr> 
          </table>
          <div class="login-button2">
-            <input type="submit" value="½T»{µù¥U">
-            <input type="reset" value="¨ú®øµù¥U">
+            <input type="submit" value="ç¢ºèªè¨»å†Š">
+            <input type="reset" value="å–æ¶ˆè¨»å†Š">
          </div>
   </div>
 <!-- Footer -->
-  
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h5>Copyright 2020°ê¥ß»O¥_Å@²z°·±d¤j¾Ç°·±d¨Æ·~ºŞ²z¨t©Ò ÂåÀø¸ê°TºŞ²z¾Çµ{ ³]­p¹Î¶¤¡G¶À²ü¤ß¡CÁÂªåÄ«¡C¹ù¤_´@¡C§d©yÀR¡C «ü¾É¡G§õÄR´f¦Ñ®v ½Ğ´L­«´¼¼z°]²£Åv¡A¤Å¤W¶Ç¥¼¸g±ÂÅv¤§ÀÉ®×¸ê®Æ¡C</h5>
-    </div>
-
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  </footer>
-
-<!-- END MAIN -->
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
-
-</body>
+<%@ include file="pageend.jsp" %>
 </html>

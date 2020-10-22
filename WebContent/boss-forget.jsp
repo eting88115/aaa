@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lanf="en">
+<html lanf="tc">
 <head>
 <meta charset="BIG5">
 <title>GUAH</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -16,38 +15,27 @@
 <body>
 
 <!-- Header -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="" class="logo">°ê¥ß»O¥_Å@²z°·±d¤j¾Ç-§É¦ì¨t²Î</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">­Ó¤H¸ê®Æ­×§ï</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">±JªÙ¥Ó½Ğªí</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">¿ï§É¦ì±M°Ï</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">®Õºô-±JªÙ±M°Ï</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">±`¨£°İÃDQ&A</a>
-  </div>
-</div>
-
+<%@ include file="menu.jsp" %>
 <!-- Sidebar -->
  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
      <i class="fa fa-remove"></i>
   </a>
-  <h4 class="w3-bar-item"><b>Åwªï¨Ï¥Î¥»¨t²Î</b></h4>
+  <h4 class="w3-bar-item"><b>æ­¡è¿ä½¿ç”¨æœ¬ç³»çµ±</b></h4>
      <form action="">
-        <label for="fname">±b¸¹:</label>
-        <input type="text" id="username" placeholder="½Ğ¿é¤J±zªº¾Ç¸¹" required="required"><br><br>
-        <label for="lname">±K½X:</label>
-        <input type="text" id="password" placeholder="½Ğ¿é¤J±zªº±K½X" required="required"><br><br>
+        <label for="fname">å¸³è™Ÿ:</label>
+        <input type="text" id="username" placeholder="è«‹è¼¸å…¥æ‚¨çš„å­¸è™Ÿ" required="required"><br><br>
+        <label for="lname">å¯†ç¢¼:</label>
+        <input type="text" id="password" placeholder="è«‹è¼¸å…¥æ‚¨çš„å¯†ç¢¼" required="required"><br><br>
         <div class="login-button">
-          <input type="submit" id="login" value="µn¤J">
+          <input type="submit" id="login" value="ç™»å…¥">
         </div>
      </form>
      <div class="solve" align="center">
-     <p><a href="#" id="first-time">µù¥U±b¸¹</a>&emsp;&emsp;<a href="#" id="forget">§Ñ°O±K½X</a></p>
+     <p><a href="#" id="first-time">è¨»å†Šå¸³è™Ÿ</a>&emsp;&emsp;<a href="#" id="forget">å¿˜è¨˜å¯†ç¢¼</a></p>
      </div>
      <div class="note" align="center">
-     <p id="note">µn¤J«á§Y¥i¨Ï¥Î¸Ó¨t²Î¥\¯à</p>
+     <p id="note">ç™»å…¥å¾Œå³å¯ä½¿ç”¨è©²ç³»çµ±åŠŸèƒ½</p>
      </div>
  </nav>
  
@@ -65,60 +53,21 @@
 
   <div class="w3-row" style="height:270px">
     <div class="post" style="margin-left: 380px">
-      <h1 class="w3-text-teal"><b>§Ñ°O±K½X</b></h1>
+      <h1 class="w3-text-teal"><b>å¿˜è¨˜å¯†ç¢¼</b></h1>
     </div>
         <div class="w3-twothird w3-container" style="margin-left: 340px">
-        <h2 class="statute"><b>½Ğ¿é¤J±zªº¾Ç¸¹¤Î«H½c</b></h2>
+        <h2 class="statute"><b>è«‹è¼¸å…¥æ‚¨çš„å­¸è™ŸåŠä¿¡ç®±</b></h2>
         </div>
             <div class="w3-twothird w3-container" style="margin-left: 300px">
-                <p>¾Ç¸¹:&emsp;<input type="email" id="username" placeholder="½Ğ¿é¤J±zªº¾Ç¸¹" required="required" />
-                <br></br>«H½c:&emsp;<input type="email" id="email" placeholder="½Ğ¿é¤J±zªº«H½c" required="required" />
+                <p>å­¸è™Ÿ:&emsp;<input type="email" id="username" placeholder="è«‹è¼¸å…¥æ‚¨çš„å­¸è™Ÿ" required="required" />
+                <br></br>ä¿¡ç®±:&emsp;<input type="email" id="email" placeholder="è«‹è¼¸å…¥æ‚¨çš„ä¿¡ç®±" required="required" />
                 </p>
                 <div class="sure-button">
-                <button>½T»{</button>
+                <button>ç¢ºèª</button>
                 </div>
             </div>
   </div>
 
 <!-- Footer -->
-
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h5>Copyright 2020°ê¥ß»O¥_Å@²z°·±d¤j¾Ç°·±d¨Æ·~ºŞ²z¨t©Ò ÂåÀø¸ê°TºŞ²z¾Çµ{ ³]­p¹Î¶¤¡G¶À²ü¤ß¡CÁÂªåÄ«¡C¹ù¤_´@¡C§d©yÀR¡C «ü¾É¡G§õÄR´f¦Ñ®v ½Ğ´L­«´¼¼z°]²£Åv¡A¤Å¤W¶Ç¥¼¸g±ÂÅv¤§ÀÉ®×¸ê®Æ¡C</h5>
-    </div>
-
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  </footer>
-
-<!-- END MAIN -->
-</div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
-
-</body>
+<%@ include file="pageend.jsp" %>
 </html>

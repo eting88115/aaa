@@ -1,19 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
-<?php
-session_start();
-if (isset($_POST['Logout']) && $_POST['Logout'] == "true") {
-    unset($_SESSION['LoginUser']);
-    header("Refresh: 0; url=index.php");
-    exit;
-}
-?>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lanf="en">
+<html lanf="tc">
 <head>
 <meta charset="BIG5">
 <title>GUAH</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -24,35 +15,24 @@ if (isset($_POST['Logout']) && $_POST['Logout'] == "true") {
 <body>
 
 <!-- Header -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="" class="logo">°ê¥ß»O¥_Å@²z°·±d¤j¾Ç-§É¦ì¨t²Î</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">­Ó¤H¸ê®Æ­×§ï</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">±JªÙ¥Ó½Ğªí</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">¿ï§É¦ì±M°Ï</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">®Õºô-±JªÙ±M°Ï</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">±`¨£°İÃDQ&A</a>
-  </div>
-</div>
-
+<%@ include file="menu.jsp" %>
 <!-- Sidebar -->
  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
      <i class="fa fa-remove"></i>
   </a>
-  <h4 class="w3-bar-item"><b>¤ı¤j©ú¦P¾Ç §A¦n</b></h4>
+  <h4 class="w3-bar-item"><b>ç‹å¤§æ˜åŒå­¸ ä½ å¥½</b></h4>
      <form action="">
         <div class="activity-time">
           <ul>
-            <li>°e¥X±JªÙ¥Ó½Ğ</li>(4/18~4/25)<br></br>
-            <li>¬d¬İ¥Ó½Ğµ²ªG </li>(4/28)<br></br>
-            <li>§É¦ì©âÅÒ</li>(5/1)<br></br>
-            <li>¿ï§É¦ì</li>(5/3~5/11)<br></br>
-            <li>­Ô¸É¥Ó½Ğ</li>(5/13~5/18)<br></br>
+            <li>é€å‡ºå®¿èˆç”³è«‹</li>(4/18~4/25)<br></br>
+            <li>æŸ¥çœ‹ç”³è«‹çµæœ </li>(4/28)<br></br>
+            <li>åºŠä½æŠ½ç±¤</li>(5/1)<br></br>
+            <li>é¸åºŠä½</li>(5/3~5/11)<br></br>
+            <li>å€™è£œç”³è«‹</li>(5/13~5/18)<br></br>
           </ul>
           <div class="login-button">
-            <input type="submit" id="logout" value="µn¥X"/>
+            <input type="submit" id="logout" value="ç™»å‡º"/>
             <input type="hidden" name="Logout" value="true"/><br></br>
           </div>
         </div>
@@ -73,28 +53,28 @@ if (isset($_POST['Logout']) && $_POST['Logout'] == "true") {
 
   <div class="w3-row">
     <div class="post" align="center">
-      <h1 class="w3-text-teal"><b>¤½§i¸ê°T</b></h1>
+      <h1 class="w3-text-teal"><b>å…¬å‘Šè³‡è¨Š</b></h1>
     </div>
         <div class="w3-twothird w3-container">
-        <h2 class="statute"><b>±JªÙ¬ÛÃöªk³W</b></h2>
+        <h2 class="statute"><b>å®¿èˆç›¸é—œæ³•è¦</b></h2>
         </div>
             <div class="w3-twothird w3-container">
               <ul>
-              <li><a href="#">[109-04-27]±JªÙ¥Ó½Ğ§@·~¸ê°T</a></li>
-              <li><a href="#">[109-04-27]¾Ç¥Í±JªÙ¦í±J³W«h</a></li>
-              <li><a href="#">[109-04-27]¾Ç¥Í±JªÙ¥Í¬¡¦ÛªvµûÅ²°OÂI¼Ğ·Ç</a></li>
-              <li><a href="#">[109-04-27]¾Ç¥Í±JªÙÀ³ª`·N¨Æ¶µº[¥Í¬¡¤½¬ù</a></li>
+              <li><a href="#">[109-04-27]å®¿èˆç”³è«‹ä½œæ¥­è³‡è¨Š</a></li>
+              <li><a href="#">[109-04-27]å­¸ç”Ÿå®¿èˆä½å®¿è¦å‰‡</a></li>
+              <li><a href="#">[109-04-27]å­¸ç”Ÿå®¿èˆç”Ÿæ´»è‡ªæ²»è©•é‘‘è¨˜é»æ¨™æº–</a></li>
+              <li><a href="#">[109-04-27]å­¸ç”Ÿå®¿èˆæ‡‰æ³¨æ„äº‹é …æš¨ç”Ÿæ´»å…¬ç´„</a></li>
               </ul>
             </div>
         <div class="w3-twothird w3-container">
-        <h2 class="news"><b>³Ì·s®ø®§</b></h2>
+        <h2 class="news"><b>æœ€æ–°æ¶ˆæ¯</b></h2>
         </div>
             <div class="w3-twothird w3-container">
               <ul>
-              <li><a href="#">[109-05-01]¾Ç¥Í±JªÙ¦í±J¶O½Õº¦¬ÛÃö»¡©ú</a></li>
-              <li><a href="#">[109-05-01]±ı¥H§C¦¬¤J¤á©Î¤¤§C¦¬¤J¤á¸ê®æ¥Ó½Ğ±JªÙ«O»Ù©ÎÀu´fª`·N¨Æ¶µ</a></li>
-              <li><a href="#">[109-04-28]109¾Ç¦~«×®Õ¥»³¡¾Ç¥Í±JªÙ¥Ó½Ğ¼f®Öµ²ªG¤½§i</a></li>
-              <li><a href="#">[109-04-11]109¾Ç¦~«×®Õ¥»³¡¾Ç¥Í±JªÙ¶}©ñ¥Ó½Ğ§É¦ì¼Æ</a></li>
+              <li><a href="#">[109-05-01]å­¸ç”Ÿå®¿èˆä½å®¿è²»èª¿æ¼²ç›¸é—œèªªæ˜</a></li>
+              <li><a href="#">[109-05-01]æ¬²ä»¥ä½æ”¶å…¥æˆ¶æˆ–ä¸­ä½æ”¶å…¥æˆ¶è³‡æ ¼ç”³è«‹å®¿èˆä¿éšœæˆ–å„ªæƒ æ³¨æ„äº‹é …</a></li>
+              <li><a href="#">[109-04-28]109å­¸å¹´åº¦æ ¡æœ¬éƒ¨å­¸ç”Ÿå®¿èˆç”³è«‹å¯©æ ¸çµæœå…¬å‘Š</a></li>
+              <li><a href="#">[109-04-11]109å­¸å¹´åº¦æ ¡æœ¬éƒ¨å­¸ç”Ÿå®¿èˆé–‹æ”¾ç”³è«‹åºŠä½æ•¸</a></li>
               </ul>
             </div>
    </div>
@@ -111,45 +91,6 @@ if (isset($_POST['Logout']) && $_POST['Logout'] == "true") {
     </div>
   </div>
   
-  <!-- Footer -->
-
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h5>Copyright 2020°ê¥ß»O¥_Å@²z°·±d¤j¾Ç°·±d¨Æ·~ºŞ²z¨t©Ò ÂåÀø¸ê°TºŞ²z¾Çµ{ ³]­p¹Î¶¤¡G¶À²ü¤ß¡CÁÂªåÄ«¡C¹ù¤_´@¡C§d©yÀR¡C «ü¾É¡G§õÄR´f¦Ñ®v ½Ğ´L­«´¼¼z°]²£Åv¡A¤Å¤W¶Ç¥¼¸g±ÂÅv¤§ÀÉ®×¸ê®Æ¡C</h5>
-    </div>
-
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  </footer>
-
-<!-- END MAIN -->
-</div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
-
-</body>
+<!-- Footer -->
+<%@ include file="pageend.jsp" %>
 </html>
