@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<!-- Header -->
+<!-- Header --->
 <%@ include file="menu.jsp" %>
 <!-- Sidebar -->
  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">

@@ -14,8 +14,6 @@ h1,h3,h4,h5,h6{
 }
 h1{
 	font-size:36px;
-	position:relative;
-	left:10px
 }
 h2{
 	font-size:30px;
@@ -130,20 +128,23 @@ input[name=email],[name=address]{
 #activity-time{
 	position:relative;
 	left: 15px;
-	padding:-15px;
-	height:50px;
+	font-size:120%;
 }
-.post{
-	margin-left: 500px;
+.wrap{
+    display: flex;
+    justify-content: space-around;
 }
-.qa{
-	position:relative;
-	left:-100px
+.div1{
+   width:400px;
+   line-height:50px;
+   padding:20px;
+   float:left;
+   font-size:17px;
 }
-span{
-	color:red;
-}
-.call{
-	position:relative;
-	left:230px;
+.div2 {
+   width:400px;
+   line-height:50px;
+   padding:20px;
+   float:left;
+   font-size:17px;
 }
