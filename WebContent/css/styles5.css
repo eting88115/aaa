@@ -148,3 +148,26 @@ input[name=email],[name=address]{
    float:left;
    font-size:17px;
 }
+table.TRaccount {
+  width:75%;
+  border-collapse:collapse;
+  border: 1px solid brown;
+  font-family:sans-serif;
+}
+table.TRaccount th {
+  font-family:sans-serif;
+  padding:10px;
+  color:white;
+  background-color:#B87070;
+  width:20px;
+  text-align: center;
+}
+table.TRaccount td{
+  font-family:sans-serif;
+  text-align: center;
+  border: 1px solid brown;
+}
+.TRaccount{
+	position:relative;
+	left: 85px;
+}
