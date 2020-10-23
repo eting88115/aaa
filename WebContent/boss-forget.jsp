@@ -24,7 +24,7 @@
   <h4 class="w3-bar-item"><b>歡迎使用本系統</b></h4>
      <form action="">
         <label for="fname">帳號:</label>
-        <input type="text" id="username" placeholder="請輸入您的學號" required="required"><br><br>
+        <input type="text" id="username" placeholder="請輸入您的帳號" required="required"><br><br>
         <label for="lname">密碼:</label>
         <input type="text" id="password" placeholder="請輸入您的密碼" required="required"><br><br>
         <div class="login-button">
@@ -56,10 +56,10 @@
       <h1 class="w3-text-teal"><b>忘記密碼</b></h1>
     </div>
         <div class="w3-twothird w3-container" style="margin-left: 340px">
-        <h2 class="statute"><b>請輸入您的學號及信箱</b></h2>
+        <h2 class="statute"><b>請輸入您的帳號及信箱</b></h2>
         </div>
             <div class="w3-twothird w3-container" style="margin-left: 300px">
-                <p>學號:&emsp;<input type="email" id="username" placeholder="請輸入您的學號" required="required" />
+                <p>帳號:&emsp;<input type="email" id="username" placeholder="請輸入您的帳號" required="required" />
                 <br></br>信箱:&emsp;<input type="email" id="email" placeholder="請輸入您的信箱" required="required" />
                 </p>
                 <div class="sure-button">
