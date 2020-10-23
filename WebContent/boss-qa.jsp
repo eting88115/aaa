@@ -15,7 +15,7 @@
 <body>
 
 <!-- Header -->
-<%@ include file="menu.jsp" %>
+<%@ include file="menu2.jsp" %>
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
