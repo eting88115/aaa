@@ -44,7 +44,7 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
+<div class="w3-main" style="margin-left:230px">
 
   <div class="w3-row w3-padding-64">
     <div class="form-fields d-grid"> 
@@ -55,6 +55,8 @@
     <div class="post" align="center">
       <h1 class="w3-text-teal"><b>宿舍老師帳號設定</b></h1>
     </div>
+          <div class="template" style="position: relative; height: 460px">
+          
     <hr>
     <div class="TRaccount">
             <table class="TRaccount">
@@ -81,7 +83,9 @@
                       <br></br>
              </table>
     </div>
+    </div>
  </div>
+</div>
 <br></br>
  
 <!-- Footer -->

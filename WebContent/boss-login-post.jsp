@@ -92,7 +92,7 @@
       <a class="w3-button w3-hover-black" href="#">&raquo;</a>
     </div>
   </div>
-  
+</div>
 <!-- Footer -->
 <%@ include file="pageend.jsp" %>
 </html>

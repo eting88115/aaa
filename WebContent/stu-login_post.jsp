@@ -54,7 +54,9 @@
   <div class="w3-row">
     <div class="post" align="center">
       <h1 class="w3-text-teal"><b>公告資訊</b></h1>
+      <a href="#" class="w3-text-cyan w3-hover-red">新增公告</a>
     </div>
+    <hr>
         <div class="w3-twothird w3-container">
         <h2 class="statute"><b>宿舍相關法規</b></h2>
         </div>
@@ -90,7 +92,7 @@
       <a class="w3-button w3-hover-black" href="#">&raquo;</a>
     </div>
   </div>
-  
+</div>
 <!-- Footer -->
 <%@ include file="pageend.jsp" %>
 </html>

@@ -29,7 +29,7 @@
         <label for="lname">密碼:</label>
         <input type="text" id="password" placeholder="請輸入密碼" required="required"><br><br>
         <div class="login-button">
-          <input type="submit" id="login" value="登入">
+         <input type="submit" id="login" value="登入">
         </div>
      </form>
      <div class="solve" align="center">
@@ -77,7 +77,7 @@
               </ul>
             </div>
    </div>
-   
+</div>
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">

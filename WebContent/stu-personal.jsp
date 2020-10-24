@@ -15,22 +15,23 @@
 <body>
 
 <!-- Header --->
-<%@ include file="menu.jsp" %>
+<%@ include file="menu2.jsp" %>
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main">
+<div class="w3">
 
   <div class="w3-row w3-padding-64">
     <div class="form-fields d-grid"> 
     </div>
   </div>
 
-  <div class="w3-row" style="height:400px">
-    <div class="post" style=" margin-left: 600px">
+  <div class="w3-row" style="height:380px">
+    <div class="post" style=" margin-left: 580px">
       <h1 class="w3-text-teal"><b>個人資料修改</b></h1>
     </div>
+         <div>
          <table>
               <tr><td><label for="name">姓名:</label><input type="text" name="name" placeholder="請輸入姓名"></td>
                   <td><label for="department">科系:</label><select name="department" id="department"><option value="1">1</option></select></td></tr><tr><td></td><td></td></tr>
@@ -40,11 +41,14 @@
                   <td><label for="account">學號:</label><input type="text" name="account" placeholder="請輸入學號"></td></tr><tr><td></td><td></td></tr>
               <tr><td><label for="email">信箱:</label><input type="text" name="email" placeholder="請輸入電子郵件"></td>
                   <td><label for="password">密碼:</label><input type="text" name="password" placeholder="請輸入帳號"></td></tr><tr><td></td><td></td></tr>
+        
          </table>
-         <div class="login-button2">
+         </div>
+         <div class="login-button2" style="margin-left: 60px">
                  <input type="submit" value="確認修改">
          </div>
   </div>
+  </div>
 <!-- Footer -->
-<%@ include file="pageend.jsp" %>
+<%@ include file="pageend2.jsp" %>
 </html>

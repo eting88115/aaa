@@ -20,7 +20,7 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main">
+<div class="w3">
 
   <div class="w3-row w3-padding-64">
     <div class="form-fields d-grid"> 
@@ -28,10 +28,10 @@
   </div>
 
   <div class="w3-row" style="height:600px">
-    <div class="post" style=" margin-left: 500px">
+    <div class="post" style=" margin-left: 600px">
       <h1 class="w3-text-teal"style="position:relative;left:10px"><b>常見問題Q&A</b></h1><br></dr>
     </div>
-       <div class="qa" style="position:relative;left:-100px" >
+       <div class="qa" style="" >
          <table>
               <tr><td><label for="Q1">Q.請問宿舍可以使用電壺或快煮鍋嗎？</label></td>
                   <td><label for="A1">A：不行，因為有可能造成宿舍跳電，如發現有使用情形將會以<span style="color:red">違規計10點。</span></label></td></tr><tr><td></td><td></td></tr>
@@ -54,5 +54,5 @@
   		</div>
   </div>
 <!-- Footer -->
-<%@ include file="pageend.jsp" %>
+<%@ include file="pageend2.jsp" %>
 </html>

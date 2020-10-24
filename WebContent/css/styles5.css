@@ -217,3 +217,9 @@ form>select[data-chose='en']~.en-info{
 	display: block;
 	padding: 1em;
 }
+.w3-main{
+	margin-left:250px;
+}
+w3{
+	margin-left:-50px;
+}

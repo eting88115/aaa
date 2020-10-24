@@ -92,5 +92,5 @@
   </div>
   
 <!-- Footer -->
-<%@ include file="pageend.jsp" %>
+<%@ include file="pageend2.jsp" %>
 </html>

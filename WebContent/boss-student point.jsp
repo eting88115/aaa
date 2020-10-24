@@ -50,7 +50,7 @@
     <div class="form-fields d-grid"> 
     </div>
   </div>
-<div class="qa" style="position:relative;width: 700px;left:-100px;" >
+<div class="qa" style="position:relative;width: 700px;height: 300px" >
 <table border="1">
 <tr>
         <th id="name">班級</th>
@@ -69,7 +69,7 @@
         <th headers="addr">外宿未先辦理登記</th> 
     </tr>
 </table>
-   
+</div>  
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
@@ -81,8 +81,8 @@
       <a class="w3-button w3-hover-black" href="#">&raquo;</a>
     </div>
   </div>
-  
+ </div>
 <!-- Footer -->
  <div class="call" style="position:relative;left:230px" >
-<%@ include file="pageend.jsp" %>
+<%@ include file="pageend2.jsp" %>
 </html>

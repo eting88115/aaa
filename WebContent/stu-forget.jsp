@@ -51,8 +51,8 @@
     </div>
   </div>
 
-  <div class="w3-row" style="height:270px">
-    <div class="post" style="margin-left: 380px">
+  <div class="w3-row" style="height:340px">
+    <div class="post" style=" margin-left: 380px">
       <h1 class="w3-text-teal"><b>忘記密碼</b></h1>
     </div>
         <div class="w3-twothird w3-container" style="margin-left: 340px">
@@ -67,7 +67,7 @@
                 </div>
             </div>
   </div>
-
+</div>
 <!-- Footer -->
 <%@ include file="pageend.jsp" %>
 </html>
