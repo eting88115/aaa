@@ -70,8 +70,8 @@
                                 <textarea id="memo" name="memo" onkeyup="$('#keywordlen').html($('#memo').val().length);" style="width:450px;height:250px">***同學，恭喜您通過宿舍申請，邀請您5/1於校本部明倫館參與抽籤過程，若您抽中宿舍即可在5/3於本系統選擇您想要的床位，若未抽中宿舍，請不要氣餒，在5/13可參與我們候補申請，祝您好運！生輔組***老師上</textarea>
                                 <span class="fn"><a href="javascript:;" id="memoDefault">刪除內容</a></span>
                             </div>
-                            <div class="custom" style="position: relative; left: 90px; top: 30px">
-                                <span id="memoSaveTop">如需保留本次內容範本，請使用「自訂範本」。</span>
+                            <div class="custom" style="position: relative; left: 65px; top: 20px">
+                                <span id="memoSaveTop" style="font-size:15px" >如需「新增範本」，請勾選「儲存為自訂範本」，按儲存。</span>
                                 <span id="memoSave">
                                     <input type="checkbox" id="memoFlag" name="memoFlag" value="0" title="勾選此處可儲存內容，方便您下次使用">
                                     <label for="memoFlag">儲存為自訂範本</label><br></br>
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         <p class="go" style="position: relative; left: 185px; top: 20px">
-                        <input type="button" class="btn" value="確定送出" onclick="resumecheck();" />
+                        <input type="button" class="btn" value="儲存" onclick="resumecheck();" />
                         </p>
            </div>
   </div>
