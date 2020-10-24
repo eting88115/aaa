@@ -63,7 +63,7 @@ p{
 	position:relative;
 	left: 45px;
 }
-#login, #logout{
+#login, #logout,#back{
 	width: 160px;
 	height: 30px;
 	font-size:15px;
@@ -222,4 +222,7 @@ form>select[data-chose='en']~.en-info{
 }
 w3{
 	margin-left:-50px;
+}
+input[name=newlink]{
+	width:600px;
 }
