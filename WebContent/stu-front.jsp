@@ -33,7 +33,7 @@
         </div>
      </form>
      <div class="solve" align="center">
-     <p><a href="WebContent/META-INF/register.jsp" id="register">註冊帳號</a>&emsp;&emsp; <a href="WebContent/META-INF/forget.jsp" id="forget">忘記密碼</a></p>
+     <p><a href="http://localhost:8040/aaa/stu-register.jsp" id="register">註冊帳號</a>&emsp;&emsp; <a href="http://localhost:8040/aaa/stu-forget.jsp" id="forget">忘記密碼</a></p>
      </div>
      <div class="note" align="center">
      <p id="note">登入後即可使用該系統功能</p>

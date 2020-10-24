@@ -32,7 +32,7 @@
         </div>
      </form>
      <div class="solve" align="center">
-     <p><a href="#" id="first-time">註冊帳號</a>&emsp;&emsp;<a href="#" id="forget">忘記密碼</a></p>
+     <p><a href="http://localhost:8040/aaa/boss-register.jsp" id="first-time">註冊帳號</a>&emsp;&emsp;<a href="http://localhost:8040/aaa/boss-forget.jsp" id="forget">忘記密碼</a></p>
      </div>
      <div class="note" align="center">
      <p id="note">登入後即可使用該系統功能</p>
