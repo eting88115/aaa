@@ -189,3 +189,14 @@ div.row span.formw {
 	position:relative;
 	left: 175px;
 }
+.change-password{
+	width: 430px; 
+	border: 1px dotted #333;
+	padding: 10px; 
+    margin: 0px auto;
+}
+div.template{
+	position:relative;
+	left: 450px;
+	font-size:17px;
+}

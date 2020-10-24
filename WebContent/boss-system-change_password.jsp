@@ -56,7 +56,7 @@
       <h1 class="w3-text-teal"><b>修改密碼</b></h1>
     </div>
     <hr>
-    <div style="width: 430px; border: 1px dotted #333; padding: 10px; margin: 0px auto"">
+    <div class="change-password">
           <form>
              <div class="row">
                  <span class="label">原密碼:</span>
