@@ -171,3 +171,21 @@ table.TRaccount td{
 	position:relative;
 	left: 85px;
 }
+div.row {
+	clear:both;
+	padding-top:10px;
+}
+div.row span.label {
+	float:left;
+	width:150px;
+	text-align:right;
+}
+div.row span.formw {
+	float:right;
+	width:235px;
+	text-align:left;
+}
+.button2{
+	position:relative;
+	left: 175px;
+}
