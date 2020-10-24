@@ -195,8 +195,25 @@ div.row span.formw {
 	padding: 10px; 
     margin: 0px auto;
 }
-div.template{
-	position:relative;
-	left: 450px;
-	font-size:17px;
+#description form{
+	width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+form>.info{
+	text-align: left;
+	display: none;
+}
+form>select[data-chose='zh-tw']~.zh-tw-info{
+	display: block;
+	padding: 1em;
+}
+form>select[data-chose='zh-cn']~.zh-cn-info{
+	display: block;
+	padding: 1em;
+}
+form>select[data-chose='en']~.en-info{
+	display: block;
+	padding: 1em;
 }

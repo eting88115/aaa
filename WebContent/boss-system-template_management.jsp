@@ -55,29 +55,28 @@
     <div class="post" align="center">
       <h1 class="w3-text-teal"><b>範本管理</b></h1>
     </div>
-          <div class="template" style="position: relative;left: 320px; height: 400px">
+          <div class="template" style="position: relative;left: 320px; height: 460px">
                   <div class="description">
-                      <form>請選擇使用範本
-                        <select name="template" id="template" onchange="MemoTag(this.value);">
-                            <option value="0">申請通過</option>
-                            <option value="1">申請未通過</option>
-                            <option value="2">自訂範本</option>
+                      <form>
+                        請選擇使用範本
+                        <select data-chose="zh-tw" onchange="this.dataset.chose = this.value;">
+                            <option selected value="zh-tw">申請通過</option>
+                            <option value="zh-cn">申請未通過</option>
+                            <option value="en">自訂範本</option>
                         </select>
-                       </form>
-                   </div>
-                        <div class="memoCnt">
-                            <div class="memoArea" style="position: relative; top: 20px">
-                                <textarea id="memo" name="memo" onkeyup="$('#keywordlen').html($('#memo').val().length);" style="width:450px;height:250px">***同學，恭喜您通過宿舍申請，邀請您5/1於校本部明倫館參與抽籤過程，若您抽中宿舍即可在5/3於本系統選擇您想要的床位，若未抽中宿舍，請不要氣餒，在5/13可參與我們候補申請，祝您好運！生輔組***老師上</textarea>
-                                <span class="fn"><a href="javascript:;" id="memoDefault">刪除內容</a></span>
-                            </div>
-                            <div class="custom" style="position: relative; left: 65px; top: 20px">
+                                <div class="info zh-tw-info"><textarea style="width:450px;height:250px">***同學，恭喜您通過宿舍申請，邀請您5/1於校本部明倫館參與抽籤過程，若您抽中宿舍即可在5/3於本系統選擇您想要的床位，若未抽中宿舍，請不要氣餒，在5/13可參與我們候補申請，祝您好運！生輔組***老師上</textarea></div>
+                                <div class="info zh-cn-info"><textarea style="width:450px;height:250px">***同學，抱歉~你未通過宿舍申請。請下學期再參與申請，謝謝!生輔組***老師上</textarea></div>
+                                <div class="info en-info"><textarea style="width:450px;height:250px">***同學，xxx。生輔組***老師上</textarea></div>
+                                <span class="fn"><a href="javascript:;" id="memoDefault" style="position: relative;left: 480px">刪除內容</a></span>
+                             <div class="custom" style="position: relative; left: 65px; top: 20px">
                                 <span id="memoSaveTop" style="font-size:15px" >如需「新增範本」，請勾選「儲存為自訂範本」，按儲存。</span>
                                 <span id="memoSave">
                                     <input type="checkbox" id="memoFlag" name="memoFlag" value="0" title="勾選此處可儲存內容，方便您下次使用">
                                     <label for="memoFlag">儲存為自訂範本</label><br></br>
                                 </span>
                             </div>
-                        </div>
+                         </form>
+                    </div>
                         <p class="go" style="position: relative; left: 185px; top: 20px">
                         <input type="button" class="btn" value="儲存" onclick="resumecheck();" />
                         </p>
