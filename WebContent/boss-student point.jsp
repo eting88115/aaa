@@ -50,9 +50,9 @@
     <div class="form-fields d-grid"> 
     </div>
   </div>
-
+<div class="qa" style="position:relative;width: 700px;left:-100px;" >
 <table border="1">
- <tr>
+<tr>
         <th id="name">班級</th>
         <th id="email">學號</th>
         <th id="phone">姓名</th>
@@ -60,13 +60,13 @@
         <th id="addr">累計扣點數</th>
         <th id="addr">扣點原因</th>
     </tr>
-    <tr>
-        <td headers="name">健四一A</td>
-        <td headers="email">072114108</td>
-        <td headers="phone">黃冠宇</td>
-        <td headers="addr">4073</td>
-        <td headers="phone">2</td>
-        <td headers="addr">外宿未先辦理登記</td> 
+<tr>
+        <th headers="name">健四一A</th>
+        <th headers="email">072114108</th>
+        <th headers="phone">黃冠宇</th>
+        <th headers="addr">4073</th>
+        <th headers="phone">2</th>
+        <th headers="addr">外宿未先辦理登記</th> 
     </tr>
 </table>
    
@@ -83,5 +83,6 @@
   </div>
   
 <!-- Footer -->
+ <div class="call" style="position:relative;left:230px" >
 <%@ include file="pageend.jsp" %>
 </html>

@@ -31,7 +31,7 @@
     <div class="post" style=" margin-left: 500px">
       <h1 class="w3-text-teal"style="position:relative;left:10px"><b>常見問題Q&A</b></h1><br></dr>
     </div>
-       <div class="qa" style="position:relative;left:-100px" >
+       <div class="qa" style="position:relative;left:-200px" >
          <table>
               <tr><td><label for="Q1">Q.請問宿舍可以使用電壺或快煮鍋嗎？</label></td>
                   <td><label for="A1">A：不行，因為有可能造成宿舍跳電，如發現有使用情形將會以<span style="color:red">違規計10點。</span></label></td></tr><tr><td></td><td></td></tr>
