@@ -72,7 +72,7 @@
           
     <hr>
     <div class="CheckList">
-            <table class="CheckList" style="table-layout:fixed">
+            <table class="CheckList" style="table-layout:fixed;width: 1100px">
                   <tr> 
                      <th width=3px padding=1px>序號</th> 
                      <th width=5px padding=1px>班級</th> 
