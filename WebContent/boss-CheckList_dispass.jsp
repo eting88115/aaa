@@ -50,24 +50,24 @@
     <div class="form-fields d-grid"> 
     </div>
   </div>
-
+</div>
   <div class="w3-row">
-    <div class="post" align="center">
+    <div class="post" align="center" style="margin-left:250px">
       <h1 class="w3-text-teal"><b>通過名單</b></h1>
-    
     </div>
-<div class="post" align="left">
-    <TABLE >
+    </div>
+<div class="post" align="right">
+    <table >
       <Tr><td><a href="#" class="w3-text-cyan w3-hover-red">待審核名單</a></td>
           <td><a href="#" class="w3-text-cyan w3-hover-red">通過名單</a></td>
           <td><a href="#" class="w3-text-cyan w3-hover-red">未通過名單</a></td></Tr>
-     </TABLE>
+     </table>
    </div>
     <div class="CheckList" style="position: relative; height: 460px">
-          
+         
     <hr>
-<div class="CheckList">
-            <table class="CheckList" style="table-layout:fixed">
+<div class="CheckList" style="margin-left:250px" style="width:200px" >
+            <table class="CheckList" style="font-size:18px" >
                   <tr> 
                      <th width=3px padding=1px>序號</th> 
                      <th width=5px padding=1px>班級</th> 
@@ -83,6 +83,7 @@
                          <td>台北市萬華區內江街89號</td>
                       </tr>
            </table>
+</div>
 </div>
  <!-- Pagination -->
   <div class="w3-center w3-padding-32">
