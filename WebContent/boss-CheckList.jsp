@@ -4,7 +4,7 @@
 <html lanf="tc">
 <head>
 <meta charset="BIG5">
-<title>GUAH</title>
+<title>boss-CheckList</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -60,13 +60,15 @@
       <h1 class="w3-text-teal"><b>待審核名單</b></h1>
     </div>
  <br>
-   <div class="CheckList" align="left">
+   <div class="post" align="left">
     <TABLE >
-      <Th><TD><a href="#"><b>待審核名單</b></TD></Th><Th><TD><a href="#"><b>通過名單</b></TD></Th><Th><TD><a href="#"><b>未通過名單</b></TD></Th>
+      <Tr><td><a href="#" class="w3-text-cyan w3-hover-red">待審核名單</a></td>
+          <td><a href="#" class="w3-text-cyan w3-hover-red">通過名單</a></td>
+          <td><a href="#" class="w3-text-cyan w3-hover-red">未通過名單</a></td></Tr>
      </TABLE>
    </div>
  
-          <div class="template" style="position: relative; height: 460px">
+          <div class="CheckList" style="position: relative; height: 460px">
           
     <hr>
     <div class="CheckList">

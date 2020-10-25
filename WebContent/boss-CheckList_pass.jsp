@@ -4,7 +4,7 @@
 <html lanf="tc">
 <head>
 <meta charset="BIG5">
-<title>GUAH</title>
+<title>boss-CheckList_pass</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -53,35 +53,38 @@
 
   <div class="w3-row">
     <div class="post" align="center">
-      <h1 class="w3-text-teal"><b>公告資訊</b></h1>
-      <a href="#" class="w3-text-cyan w3-hover-red">新增公告</a>
+      <h1 class="w3-text-teal"><b>通過名單</b></h1>
+    
     </div>
-    <hr>
-        <div class="w3-twothird w3-container">
-        <h2 class="statute"><b>宿舍相關法規</b></h2>
-        </div>
-            <div class="w3-twothird w3-container">
-              <ul>
-              <li><a href="#">[109-04-27]宿舍申請作業資訊</a></li>
-              <li><a href="#">[109-04-27]學生宿舍住宿規則</a></li>
-              <li><a href="#">[109-04-27]學生宿舍生活自治評鑑記點標準</a></li>
-              <li><a href="#">[109-04-27]學生宿舍應注意事項暨生活公約</a></li>
-              </ul>
-            </div>
-        <div class="w3-twothird w3-container">
-        <h2 class="news"><b>最新消息</b></h2>
-        </div>
-            <div class="w3-twothird w3-container">
-              <ul>
-              <li><a href="#">[109-05-01]學生宿舍住宿費調漲相關說明</a></li>
-              <li><a href="#">[109-05-01]欲以低收入戶或中低收入戶資格申請宿舍保障或優惠注意事項</a></li>
-              <li><a href="#">[109-04-28]109學年度校本部學生宿舍申請審核結果公告</a></li>
-              <li><a href="#">[109-04-11]109學年度校本部學生宿舍開放申請床位數</a></li>
-              </ul>
-            </div>
+<div class="post" align="left">
+    <TABLE >
+      <Tr><td><a href="#" class="w3-text-cyan w3-hover-red">待審核名單</a></td>
+          <td><a href="#" class="w3-text-cyan w3-hover-red">通過名單</a></td>
+          <td><a href="#" class="w3-text-cyan w3-hover-red">未通過名單</a></td></Tr>
+     </TABLE>
    </div>
-   
-  <!-- Pagination -->
+    <div class="CheckList" style="position: relative; height: 460px">
+          
+    <hr>
+<div class="CheckList">
+            <table class="CheckList" style="table-layout:fixed">
+                  <tr> 
+                     <th width=3px padding=1px>序號</th> 
+                     <th width=5px padding=1px>班級</th> 
+                     <th width=10px padding=1px>學號</th> 
+                     <th width=10px padding=1px>姓名</th>
+                     <th width=30px padding=1px>地址</th>
+                  </tr> 
+                      <tr> 
+                         <td>1</td> 
+                         <td>健四一B</td> 
+                         <td>072114201</td> 
+                         <td><a href="#"><b>王大明</b></a></td>
+                         <td>宜蘭縣羅東鎮純農路一段77巷3號</td>
+                      </tr> 
+           </table>
+</div>
+ <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
       <a class="w3-button w3-black" href="#">1</a>
@@ -91,9 +94,10 @@
       <a class="w3-button w3-hover-black" href="#">5</a>
       <a class="w3-button w3-hover-black" href="#">&raquo;</a>
     </div>
-  </div>
-</div>
+  </div>   
+   
+   
 </body>
 <!-- Footer -->
-<%@ include file="pageend.jsp" %>
+<%@ include file="pageend2.jsp" %>
 </html>
