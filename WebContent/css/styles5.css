@@ -226,3 +226,28 @@ w3{
 input[name=newlink]{
 	width:600px;
 }
+
+table.CheckList {
+  width:100%;
+  border-collapse:collapse;
+  border: 1px solid brown;
+  font-family:sans-serif;
+}
+table.CheckList th {
+  font-family:sans-serif;
+  padding:10px;
+  color:black;
+  background-color:#FFFDD0;
+  width:20px;
+  text-align: center;
+}
+table.CheckList td{
+  font-family:sans-serif;
+  text-align: center;
+  border: 1px solid brown;
+  background-color:#F5F5DC
+}
+.CheckList{
+	position:relative;
+	left: 10px;
+}
