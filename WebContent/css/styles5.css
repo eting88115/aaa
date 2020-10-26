@@ -169,7 +169,7 @@ table.TRaccount td{
 }
 .TRaccount{
 	position:relative;
-	left: 85px;
+	left: 65px;
 }
 div.row {
 	clear:both;
@@ -250,4 +250,13 @@ table.CheckList td{
 .CheckList{
 	position:relative;
 	left: 10px;
+}
+caption.title{
+	font-size:20px;
+}
+input[id=TRaccount]{
+	width:250px;
+}
+input[id=TRpassword]{
+	width:200px;
 }
