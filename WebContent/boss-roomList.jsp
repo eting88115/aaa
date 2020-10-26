@@ -4,7 +4,7 @@
 <html lanf="tc">
 <head>
 <meta charset="BIG5">
-<title>GUAH</title>
+<title>boss-roomList</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -25,11 +25,11 @@
      <form action="">
         <div class="activity-time">
           <ul>
-            <li>寄出送出申請訊息</li>(4/11)<br></br>
-            <li>寄出公告申請結果/設定床位開放</li>(5/1)<br></br>
-            <li>學生選床位</li>(5/3~5/11)<br></br>
-            <li>開放候補申請</li>(5/12)<br></br>
-            <li>寄出候補結果</li>(5/19)<br></br>
+            <li>送出宿舍申請</li>(4/18~4/25)<br></br>
+            <li>查看申請結果 </li>(4/28)<br></br>
+            <li>床位抽籤</li>(5/1)<br></br>
+            <li>選床位</li>(5/3~5/11)<br></br>
+            <li>候補申請</li>(5/13~5/18)<br></br>
           </ul>
           <div class="login-button">
             <input type="submit" id="logout" value="登出"/>
@@ -53,38 +53,23 @@
 
   <div class="w3-row">
     <div class="post" align="center">
-      <h1 class="w3-text-teal"><b>修改密碼</b></h1>
-    </div>
+      <h1 class="w3-text-teal"><b>本年度住宿名單</b></h1>
+     </div>
     <hr>
-    <div class="change-password">
-          <form>
-             <div class="row">
-                 <span class="label">原密碼:</span>
-                 <span class="formw"><input type="text" placeholder="請輸入您的原密碼" required="required" /></span>
-             </div>
-             
-             <div class="row">
-                 <span class="label">新密碼:</span>
-                 <span class="formw"><input type="text" placeholder="請輸入您的新密碼" required="required" /></span>
-             </div>
-             
-             <div class="row">
-                 <span class="label">再次確認新密碼:</span>
-                 <span class="formw"><input type="text" placeholder="請輸入您的新密碼" required="required" /></span>
-             </div>
-             
-             <br></br>
-               
-              <div class="button2">
-                <button>送出</button>
-              </div>
-
-          </form>
-               
-      </div>
- </div>
-<br></br>
- 
-<!-- Footer -->
+ <form action="">
+        <label for="class">學生班級：</label>
+        <input type="text" id="userClass" placeholder="請輸入班級" required="required"><br><br>
+        <label for="name">學生姓名：</label>
+        <input type="text" id="userName" placeholder="請輸入姓名" required="required"><br><br>
+        <label for="number">學號：</label>
+        <input type="text" id="userNumber" placeholder="請輸入學號" required="required"><br><br>
+        <div class="searching-button">
+          <input type="submit" id="searching" value="搜尋">
+        </div>
+     </form>   
+    
+    
+</body>
+<!--Footer-->
 <%@ include file="pageend2.jsp" %>
 </html>

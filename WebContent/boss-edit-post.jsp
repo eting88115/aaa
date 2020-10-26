@@ -4,7 +4,7 @@
 <html lanf="tc">
 <head>
 <meta charset="BIG5">
-<title>GUAH</title>
+<title>boss-edit-post</title>
 </head>
 
 <body>

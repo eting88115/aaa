@@ -4,7 +4,7 @@
 <html lanf="tc">
 <head>
 <meta charset="BIG5">
-<title>GUAH</title>
+<title>boss-SM-changeCode</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -53,28 +53,37 @@
 
   <div class="w3-row">
     <div class="post" align="center">
-      <h1 class="w3-text-teal"><b>系統管理</b></h1>
+      <h1 class="w3-text-teal"><b>修改密碼</b></h1>
     </div>
     <hr>
-    <div class="wrap">
-            <div class="div1">
-              <ul>
-              <a href="#">流程時間排定</a><br></br>
-              <a href="#">床位設定 (保留床位、可抽籤床位數)</a><br></br>
-              <a href="#">超連結設定：校網-宿舍專區</a><br></br>
-              <a href="#">範本管理</a><br></br>
-              </ul>
-            </div>
-            <div class="div2">
-              <ul>
-              <a href="#">宿舍老師帳號設定</a><br></br>
-              <a href="#">學生生活自治評鑑記點</a><br></br>
-              <a href="#">修改密碼</a><br></br>
-              </ul>
-            </div>
-    </div>
+    <div class="change-password">
+          <form>
+             <div class="row">
+                 <span class="label">原密碼:</span>
+                 <span class="formw"><input type="text" placeholder="請輸入您的原密碼" required="required" /></span>
+             </div>
+             
+             <div class="row">
+                 <span class="label">新密碼:</span>
+                 <span class="formw"><input type="text" placeholder="請輸入您的新密碼" required="required" /></span>
+             </div>
+             
+             <div class="row">
+                 <span class="label">再次確認新密碼:</span>
+                 <span class="formw"><input type="text" placeholder="請輸入您的新密碼" required="required" /></span>
+             </div>
+             
+             <br></br>
+               
+              <div class="button2">
+                <button>送出</button>
+              </div>
+
+          </form>
+               
+      </div>
  </div>
-   
+<br></br>
  
 <!-- Footer -->
 <%@ include file="pageend2.jsp" %>

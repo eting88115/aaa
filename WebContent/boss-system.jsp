@@ -4,7 +4,7 @@
 <html lanf="tc">
 <head>
 <meta charset="BIG5">
-<title>boss-link</title>
+<title>boss-SM</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -44,7 +44,7 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px;height:420px">
+<div class="w3-main" style="margin-left:250px">
 
   <div class="w3-row w3-padding-64">
     <div class="form-fields d-grid"> 
@@ -53,26 +53,29 @@
 
   <div class="w3-row">
     <div class="post" align="center">
-      <h1 class="w3-text-teal"><b>超連結設定：校網-宿舍專區</b></h1>
+      <h1 class="w3-text-teal"><b>系統管理</b></h1>
     </div>
     <hr>
-    <div class="link">
-    <form action="link" style="margin-left:35px">
-        <div style="margin-left:100px">
-            <label for="fname">新超連結設定：</label>
-            <input type="text" name="newlink" placeholder="請輸入網址"><br><br>
-        </div>
-        <div class="login-button" style="margin-left:300px">
-          <input type="submit" id="login" value="上傳">
-          <input type="submit" id="back" value="返回">
-        </div>
-     </form>
-     </div>
+    <div class="wrap">
+            <div class="div1">
+              <ul>
+              <a href="#">流程時間排定</a><br></br>
+              <a href="#">床位設定 (保留床位、可抽籤床位數)</a><br></br>
+              <a href="#">超連結設定：校網-宿舍專區</a><br></br>
+              <a href="#">範本管理</a><br></br>
+              </ul>
+            </div>
+            <div class="div2">
+              <ul>
+              <a href="#">宿舍老師帳號設定</a><br></br>
+              <a href="#">學生生活自治評鑑記點</a><br></br>
+              <a href="#">修改密碼</a><br></br>
+              </ul>
+            </div>
+    </div>
  </div>
- </div>
-<br></br>
-
+   
  
 <!-- Footer -->
-<%@ include file="pageend.jsp" %>
+<%@ include file="pageend2.jsp" %>
 </html>

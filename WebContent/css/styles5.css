@@ -59,7 +59,7 @@ p{
 #email{
 	width: 260px;
 }
-.login-button{
+.login-button,.searching-button{
 	position:relative;
 	left: 45px;
 }
