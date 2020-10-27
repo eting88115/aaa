@@ -49,7 +49,10 @@
     <div class="form-fields d-grid"> 
     </div>
   </div>
-<div class="qa" style="position:relative;width: 700px;height: 300px" >
+<div class="w3-row" style="height:400px">
+    <div class="post" style=" margin-left: 600px">
+      <h1 class="w3-text-teal"><b>學生生活自治評鑑記點</b></h1>
+    </div>
 <table border="1">
 <tr>
         <th id="name">班級</th>
