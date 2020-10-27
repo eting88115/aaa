@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lanf="tc">
+<html lang="tc">
 <head>
 <meta charset="BIG5">
 <title>stu-register</title>
@@ -47,6 +47,7 @@
             <input type="submit" value="確認註冊">
             <input type="reset" value="取消註冊">
          </div>
+  </div>
   </div>
 <!-- Footer -->
 <%@ include file="pageend2.jsp" %>

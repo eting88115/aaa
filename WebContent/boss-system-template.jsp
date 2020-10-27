@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lanf="tc">
+<html lang="tc">
 <head>
 <meta charset="BIG5">
 <title>boss-SM-template</title>
@@ -25,11 +25,11 @@
      <form action="">
         <div class="activity-time">
           <ul>
-            <li>寄出送出申請訊息</li>(4/11)<br></br>
-            <li>寄出公告申請結果/設定床位開放</li>(5/1)<br></br>
-            <li>學生選床位</li>(5/3~5/11)<br></br>
-            <li>開放候補申請</li>(5/12)<br></br>
-            <li>寄出候補結果</li>(5/19)<br></br>
+            <li>寄出送出申請訊息</li>(4/11)<br>
+            <li>寄出公告申請結果/設定床位開放</li>(5/1)<br>
+            <li>學生選床位</li>(5/3~5/11)<br>
+            <li>開放候補申請</li>(5/12)<br>
+            <li>寄出候補結果</li>(5/19)<br>
           </ul>
           <div class="login-button">
             <input type="submit" id="logout" value="登出"/>

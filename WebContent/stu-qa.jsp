@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lanf="tc">
+<html lang="tc">
 <head>
 <meta charset="BIG5">
 <title>stu-qa</title>
@@ -29,7 +29,7 @@
 
   <div class="w3-row" style="height:600px">
     <div class="post" style=" margin-left: 600px">
-      <h1 class="w3-text-teal"style="position:relative;left:10px"><b>常見問題Q&A</b></h1><br></dr>
+      <h1 class="w3-text-teal"style="position:relative;left:10px"><b>常見問題Q&A</b></h1><br>
     </div>
        <div class="qa" style="" >
          <table>

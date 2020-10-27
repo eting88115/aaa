@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lanf="tc">
+<html lang="tc">
 <head>
 <meta charset="BIG5">
-<title>boss-register</title>
+<title>tr-modified student point</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -26,11 +26,11 @@
      <form action="">
         <div class="activity-time">
           <ul>
-            <li>寄出送出申請訊息</li>(4/11)<br></br>
-            <li>寄出公告申請結果/設定床位開放</li>(5/1)<br></br>
-            <li>學生選床位</li>(5/3~5/11)<br></br>
-            <li>開放候補申請</li>(5/12)<br></br>
-            <li>寄出候補結果</li>(5/19)<br></br>
+            <li>寄出送出申請訊息</li>(4/11)<br>
+            <li>寄出公告申請結果/設定床位開放</li>(5/1)<br>
+            <li>學生選床位</li>(5/3~5/11)<br>
+            <li>開放候補申請</li>(5/12)<br>
+            <li>寄出候補結果</li>(5/19)<br>
           </ul>
           <div class="login-button">
             <input type="submit" id="logout" value="登出"/>
@@ -54,8 +54,8 @@
         <table>
               <tr><td><label for="name">班級:</label><input type="text" name="name" placeholder="健四一A"></td>
                    <td><label for="name">姓名:</label><input type="text" name="email" placeholder="黃冠宇"></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="class">扣點數:</label><select name="class" id="class"><option value="2">2</option></select></td></td></tr><tr><td></td><td></td></tr>
-                 <tr><td><label for="class">扣點原因:</label><select name="class" id="class"><option value="外宿未先辦理登記">外宿未先辦理登記</option></select></td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="class">扣點數:</label><select name="class" id="class"><option value="2">2</option></select></td>
+                   <td><label for="class">扣點原因:</label><select name="class" id="class"><option value="外宿未先辦理登記">外宿未先辦理登記</option></select></td></tr><tr><td></td><td></td></tr>
               <tr><td><label for="name">學號:</label><input type="text" name="name" placeholder="072114217"></td>
                   <td><label for="name">床號:</label><input type="text" name="email" placeholder="4073"></td></tr><tr><td></td><td></td></tr>
          </table>
@@ -64,6 +64,7 @@
             <input type="reset" value="取消">
          </div>
   </div>
+  </div>
 <!-- Footer -->
-<%@ include file="pageend2.jsp" %>
+<%@ include file="pageend.jsp" %>
 </html>

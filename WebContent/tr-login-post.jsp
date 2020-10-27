@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lanf="tc">
+<html lang="tc">
 <head>
 <meta charset="BIG5">
 <title>tr-login-post</title>
@@ -25,11 +25,11 @@
      <form action="">
         <div class="activity-time">
           <ul>
-            <li>送出宿舍申請</li>(4/18~4/25)<br></br>
-            <li>查看申請結果 </li>(4/28)<br></br>
-            <li>床位抽籤</li>(5/1)<br></br>
-            <li>選床位</li>(5/3~5/11)<br></br>
-            <li>候補申請</li>(5/13~5/18)<br></br>
+            <li>送出宿舍申請</li>(4/18~4/25)<br>
+            <li>查看申請結果 </li>(4/28)<br>
+            <li>床位抽籤</li>(5/1)<br>
+            <li>選床位</li>(5/3~5/11)<br>
+            <li>候補申請</li>(5/13~5/18)<br>
           </ul>
           <div class="login-button">
             <input type="submit" id="logout" value="登出"/>
@@ -78,7 +78,7 @@
               </ul>
             </div>
    </div>
-   
+ 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
@@ -90,7 +90,7 @@
       <a class="w3-button w3-hover-black" href="#">&raquo;</a>
     </div>
   </div>
-  
+  </div>
 <!-- Footer -->
-<%@ include file="pageend2.jsp" %>
+<%@ include file="pageend.jsp" %>
 </html>
