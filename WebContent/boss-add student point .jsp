@@ -22,7 +22,7 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
      <i class="fa fa-remove"></i>
   </a>
-  <h4 class="w3-bar-item"><b>陳莉莉教官 您好!</b></h4>
+  <h4 class="w3-bar-item"><b>陳莉莉教官 您好</b></h4>
      <form action="">
         <div class="activity-time">
           <ul>
