@@ -29,7 +29,7 @@
 
   <div class="w3-row" style="height:380px">
     <div class="post" style=" margin-left: 580px">
-      <h1 class="w3-text-teal"><b>個人資料修改</b></h1>
+      <h1 class="w3-text-teal"><b>個人資料</b></h1>
     </div>
          <div>
          <%request.setCharacterEncoding("utf-8"); %>
