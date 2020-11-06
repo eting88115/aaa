@@ -28,7 +28,7 @@
   </div>
 
   <div class="w3-row" style="height:380px">
-    <div class="post" style=" margin-left: 580px">
+    <div class="post" style=" margin-left: 600px">
       <h1 class="w3-text-teal"><b>個人資料修改</b></h1>
     </div>
          <div>
@@ -62,7 +62,7 @@
                   <td><label for="password">密碼:</label><input type="text" name="password" placeholder="請輸入帳號"></td></tr><tr><td></td><td></td></tr>
          </table>
          </div>
-         <div class="login-button2" style="margin-left: 60px">
+         <div class="login-button2" style="margin-left: 80px">
                  <input type="submit" value="確認修改">
          </div>
          </form>

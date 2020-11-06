@@ -260,3 +260,7 @@ input[id=TRaccount]{
 input[id=TRpassword]{
 	width:200px;
 }
+.back-button{
+	position:relative;
+	left: 640px;
+}

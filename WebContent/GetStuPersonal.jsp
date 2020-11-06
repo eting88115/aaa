@@ -28,7 +28,7 @@
   </div>
 
   <div class="w3-row" style="height:380px">
-    <div class="post" style=" margin-left: 580px">
+    <div class="post" style=" margin-left: 640px">
       <h1 class="w3-text-teal"><b>個人資料</b></h1>
     </div>
          <div>
@@ -41,8 +41,8 @@
  String email = request.getParameter("email");
  String password = request.getParameter("password");
 %>
-
-  <table>
+<form>
+  <table style=" margin-left: 50px">
      <tr><td><label for="name">姓名:<%=name %></label></td>
          <td><label for="department">科系:</label><%String department = request.getParameter("department");out.println(department);%></td></tr><tr><td></td><td></td></tr>
      <tr><td><label for="phone">電話:</label><%=phone %></td>
@@ -53,7 +53,10 @@
          <td><label for="password">密碼:</label><%=password %></td></tr><tr><td></td><td></td></tr>
         
  </table>
-
+     <div class="login-button2" style="margin-left: 80px;top: 40px">
+           <input type ="button" onclick="javascript:location.href='http://localhost:8007/aaa/stu-login_post.jsp'" value="回到首頁"></input>   
+     </div>
+</form>
   </div>
   </div>
 <!-- Footer -->
