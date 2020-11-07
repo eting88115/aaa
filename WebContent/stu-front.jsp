@@ -23,15 +23,34 @@
      <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>歡迎使用本系統</b></h4>
-     <form action="">
-        <label for="fname">帳號:</label>
-        <input type="text" id="username" placeholder="請輸入學號" required="required"><br><br>
-        <label for="lname">密碼:</label>
-        <input type="text" id="password" placeholder="請輸入密碼" required="required"><br><br>
-        <div class="login-button">
-         <input type="submit" id="login" value="登入">
-        </div>
-     </form>
+<html>
+<head>
+<meta charset="BIG5">
+<title>資料輸入表單</title>
+</head>
+<body>
+ 
+<form action="" action="left2.jsp">
+  
+   <tr>
+    <td bgcolor="#E1E1E1">&nbsp&nbsp&nbsp&nbsp帳號：</td>
+    <td><input type="text" name="account"></td>
+   </tr>
+   <tr>
+    <td bgcolor="#E1E1E1">&nbsp&nbsp&nbsp&nbsp密碼：</td>
+    <td><input type="text" name="paw"></td>
+   </tr>
+   <tr>
+    <td colspan="2" align="center">
+     <input type="submit" value="確定">
+     <input type="reset" value="取消">
+    </td>
+   </tr>
+ 
+ </form>
+</body>
+</html>
+
      <div class="solve" align="center">
      <p><a href="http://localhost:8040/aaa/stu-register.jsp" id="register">註冊帳號</a>&emsp;&emsp; <a href="http://localhost:8040/aaa/stu-forget.jsp" id="forget">忘記密碼</a></p>
      </div>
