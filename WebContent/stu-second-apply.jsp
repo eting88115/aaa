@@ -4,7 +4,7 @@
 <html lang="tc">
 <head>
 <meta charset="utf-8">
-<title>stu-apply</title>
+<title>stu-second-apply</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -27,11 +27,11 @@
     </div>
   </div>
 
-  <div class="w3-row" style="height:600px">
+  <div class="w3-row" style="height:380px">
     <div class="post" style=" margin-left: 600px">
-      <h1 class="w3-text-teal"><b>宿舍申請表</b></h1>
+      <h1 class="w3-text-teal"><b>候補宿舍申請表</b></h1>
     </div>
-         <form method="post" action="GetStuApply.jsp">
+         <form method="post" action="GetStuSecondApply.jsp">
          <table>
               <tr><td><label for="name">姓名:</label><input type="text" name="name" placeholder="請輸入姓名"></td>
                    <td><label for="address">住址:</label><input type="text" name="address" placeholder="請輸入住址"></td></tr><tr><td></td><td></td></tr>
@@ -62,9 +62,9 @@
                       </select></td>
                    
          </table>
-         <div class="login-button2" style=" margin-left: 20px">
-            <input type="submit" value="確認申請">
-            <input type ="button" onclick="javascript:location.href='http://localhost:8007/aaa/stu-login_post.jsp'" value="取消申請">
+         <div class="login-button2" style=" margin-left: 40px">
+            <input type="submit" value="確認候補">
+            <input type ="button" onclick="javascript:location.href='http://localhost:8007/aaa/stu-login_post.jsp'" value="取消候補">
          </div>
          </form>
   </div>

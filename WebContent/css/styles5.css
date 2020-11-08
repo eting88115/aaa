@@ -264,3 +264,17 @@ input[id=TRpassword]{
 	position:relative;
 	left: 640px;
 }
+.button3{
+	position:relative;
+	left: 640px;
+	top: 20px;
+}
+.apply td{
+	border:5px;
+        padding:15px 15px;
+}
+.button4{
+	position:relative;
+	left: 620px;
+	top: 20px;
+}

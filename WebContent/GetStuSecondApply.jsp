@@ -4,7 +4,7 @@
 <html lang="tc">
 <head>
 <meta charset="utf-8">
-<title>GetStuApply</title>
+<title>GetStuSecondApply</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -27,9 +27,9 @@
     </div>
   </div>
 
-  <div class="w3-row" style="height:600px">
+  <div class="w3-row" style="height:380px">
     <div class="post" style=" margin-left: 600px">
-      <h1 class="w3-text-teal"><b>宿舍申請表</b></h1>
+      <h1 class="w3-text-teal"><b>候補宿舍申請表</b></h1>
     </div>
     <%request.setCharacterEncoding("utf-8"); %>
 <%
@@ -41,7 +41,7 @@
  String photo = request.getParameter("address");
 %>
 
-         <table>
+         <table style=" margin-left: 40px">
               <tr><td><label for="name">姓名:</label><%=name %></td>
                    <td><label for="address">住址:</label><%=address %></td></tr><tr><td></td><td></td></tr>
               <tr><td><label for="account">學號:</label><%=account %></td>
@@ -54,7 +54,7 @@
                    
          </table> 
          
-         <div class="back-button">
+         <div class="login-button2" style=" margin-left: 80px">
            <input type ="button" onclick="javascript:location.href='http://localhost:8007/aaa/stu-login_post.jsp'" value="回到首頁"></input>   
          </div>
 </div>
