@@ -4,7 +4,7 @@
 <html lang="tc">
 <head>
 <meta charset="utf-8">
-<title>boss-StuApply2</title>
+<title>boss-StuSecondApply</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -50,13 +50,13 @@
     <div class="form-fields d-grid"> 
     </div>
   </div>
-<%request.setCharacterEncoding("utf-8"); %>
+
   
     <div class="post" align="center" style="margin-left:110px">
-      <h1 class="w3-text-teal"><b>宿舍申請表</b></h1>
+      <h1 class="w3-text-teal"><b>候補宿舍申請表</b></h1>
     </div>
     <div class="apply">
-         
+         <form method="post" action="boss-StuSecondApply2.jsp">
          <table border="1" style="margin-left:50px; width: 700px;height: 300px">
               <tr><td><label for="name">姓名:</label></td>
                   <td><label for="address">住址:</label></td></tr><tr><td></td><td></td></tr>
@@ -67,13 +67,20 @@
               <tr><td><label for="department">科系:</label></td>
                   <td><label for="email">信箱:</label></td></tr><tr><td></td><td></td></tr>
               <tr><td><label for="classroom">班級:</label></td>
-                  <td><label for="audit">審核狀態:</label><% String audit = request.getParameter("audit");out.println(audit); %></td></tr><tr><td></td><td></td></tr> 
-         </table> 
-         
+                  <td><label for="audit">審核狀態:</label>
+                      <select name="audit" id="audit">
+                          <option value="0" selected>請選擇</option>
+                          <option value="通過">通過</option>
+                          <option value="未通過">未通過</option>
+                      </select>
+                  </td></tr><tr><td></td><td></td></tr> 
+           </table> 
+           <div class="button3">
+           <input type="submit"  style="width:100px" value="儲存">
+           </div>
+          </form>
     </div>
-         <div class="button4">
-           <input type="submit"  style="width:150px" onclick="javascript:location.href='http://localhost:8011/aaa/boss-CheckList.jsp'" value="回宿舍審核清單">
-         </div>
+         
 </div>
 </div>
 <!-- Footer -->

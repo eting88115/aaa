@@ -4,7 +4,7 @@
 <html lang="tc">
 <head>
 <meta charset="utf-8">
-<title>boss-StuApply2</title>
+<title>boss-StuSecondApply2</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -53,7 +53,7 @@
 <%request.setCharacterEncoding("utf-8"); %>
   
     <div class="post" align="center" style="margin-left:110px">
-      <h1 class="w3-text-teal"><b>宿舍申請表</b></h1>
+      <h1 class="w3-text-teal"><b>候補宿舍申請表</b></h1>
     </div>
     <div class="apply">
          

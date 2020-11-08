@@ -55,7 +55,7 @@
          </table> 
          
          <div class="login-button2" style=" margin-left: 80px">
-           <input type ="button" onclick="javascript:location.href='http://localhost:8007/aaa/stu-login_post.jsp'" value="回到首頁"></input>   
+           <input type ="button" onclick="javascript:location.href='http://localhost:8011/aaa/stu-login_post.jsp'" value="回到首頁"></input>   
          </div>
 </div>
 </div>
