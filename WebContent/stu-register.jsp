@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css\styles3.css" >
 <link rel="stylesheet" href="css\styles4.css">
 <link rel="stylesheet" href="css\styles5.css">
+
 </head>
 <body>
 
@@ -43,10 +44,14 @@
               <tr><td><label for="address">住址:</label><input type="text" name="address" placeholder="請輸入住址"></td>
                   <td><label for="password">密碼:</label><input type="text" name="password" placeholder="請輸入帳號"></td></tr><tr><td></td><td></td></tr> 
          </table>
+         <script>
+         string = "此帳號已註冊過，請確認帳號與密碼是否正確，若還是無法使用               請洽詢宿舍老師 wen123456@ntunhs.edu.tw";
+         </script>
          <div class="login-button2">
-            <input type="submit" value="確認註冊">
+            <input type="submit" a href="javascript:alert(string)"  value="確認註冊">
             <input type="reset" value="取消註冊">
          </div>
+         <a href="javascript:alert(string)">此帳號已註冊過</a>
   </div>
   </div>
 <!-- Footer -->
