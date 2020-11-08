@@ -21,22 +21,7 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
      <i class="fa fa-remove"></i>
   </a>
-  <h4 class="w3-bar-item"><b>陳莉莉教官 您好</b></h4>
-     <form action="">
-        <div class="activity-time">
-          <ul>
-            <li>送出宿舍申請</li>(4/18~4/25)<br>
-            <li>查看申請結果 </li>(4/28)<br>
-            <li>床位抽籤</li>(5/1)<br>
-            <li>選床位</li>(5/3~5/11)<br>
-            <li>候補申請</li>(5/13~5/18)<br>
-          </ul>
-          <div class="login-button">
-            <input type="submit" id="logout" value="登出"/>
-            <input type="hidden" name="Logout" value="true"/><br></br>
-          </div>
-        </div>
-     </form>
+   <%@ include file="left2.jsp" %>
  </nav>
  
 <!-- Header -->
