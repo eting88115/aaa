@@ -62,8 +62,15 @@
                       </select></td>
                    
          </table>
+         <script>
+			function link2nthu() {
+			answer = confirm("請確認宿舍申請表填寫確實無誤、戶籍檔案是否選擇正確，此檔案為主要審核資料，送出資料之後不可再次修改!");
+			if (answer)
+				confirm("資料輸入完畢");
+			}
+		</script>
          <div class="login-button2" style=" margin-left: 20px">
-            <input type="submit" value="確認申請">
+         	<input type="submit" onclick="javascript:link2nthu()" value="確定申請">
             <input type ="button" onclick="javascript:location.href='http://localhost:8007/aaa/stu-login_post.jsp'" value="取消申請">
          </div>
          </form>

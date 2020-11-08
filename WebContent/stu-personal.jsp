@@ -62,8 +62,15 @@
                   <td><label for="password">密碼:</label><input type="text" name="password" placeholder="請輸入帳號"></td></tr><tr><td></td><td></td></tr>
          </table>
          </div>
+         <script>
+			function link2nthu() {
+			answer = confirm("請確認個資修改確實無誤，及信箱是否填寫正確，日後相關信件將會傳送至此信箱");
+			if (answer)
+				confirm("資料修改完畢");
+			}
+		</script>
          <div class="login-button2" style="margin-left: 80px">
-                 <input type="submit" value="確認修改">
+                 <input type="submit" onclick="javascript:link2nthu()" value="確認修改">
          </div>
          </form>
   </div>
