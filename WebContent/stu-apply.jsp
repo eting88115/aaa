@@ -38,7 +38,7 @@
               <tr><td><label for="account">學號:</label><input type="text" name="account" placeholder="請輸入學號"></td>
                   <td><label for="phone">電話:</label><input type="text" name="phone" placeholder="請輸入電話號碼"></td></tr><tr><td></td><td></td></tr>
               <tr><td><label for="sex">性別:</label><input type="radio" name="sex" value="男生" checked>男生<input type="radio" name="sex" value="女生">女生</td>
-                  <td><label for="photo">戶籍資料圖片檔:</label><input type="text" name="photo" placeholder="選取戶籍資料圖片檔"></td></tr><tr><td></td><td></td></tr>
+                  <td><label for="photo">戶籍資料圖片檔:</label><input type="file" id="myfile" name="myfile"></td></tr><tr><td></td><td></td></tr>
               <tr><td><label for="department">科系:</label>
                     <select name="department" id="department">
                           <option value="0" selected>請選擇</option>
