@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+    pageEncoding="utf-8" import="java.sql.*"%>
 <!DOCTYPE html>
 <html lang="tc">
 <head>
@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css\styles5.css">
 </head>
 <body>
+
 
 <!-- Header --->
 <%@ include file="menu2.jsp" %>
@@ -35,23 +36,37 @@
     <div class="form-fields d-grid"> 
     </div>
   </div>
-
+<%
+	// Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+	// Connection con =DriverManager.getConnection("jdbc:odbc:dataBase") ;
+	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+	Connection con=DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\yun ping\\Desktop\\新增資料夾\\aaa\\database.accdb;");
+	Statement smt= con.createStatement();
+	String sql = "SELECT * FROM studenApply ";
+	ResultSet rs = smt.executeQuery(sql);
+%>
   
-    <div class="post" align="center" style="margin-left:110px">
+    <div class="post" align="center" style="margin-left:150px">
       <h1 class="w3-text-teal"><b>宿舍申請表</b></h1>
     </div>
     <div class="apply">
          <form method="post" action="boss-StuApply2.jsp">
          <table border="1" style="margin-left:50px; width: 700px;height: 300px">
-              <tr><td><label for="name">姓名:</label></td>
-                  <td><label for="address">住址:</label></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="account">學號:</label></td>
-                  <td><label for="phone">電話:</label></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="sex">性別:</label></td>
+<%
+while(rs.next())
+{%>
+              <tr><td><label for="name">姓名:<%=rs.getString("姓名")%></label></td>
+                  <td><label for="address">住址:<%=rs.getString("住址")%></label></td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="account">學號:<%=rs.getString("學號")%></label></td>
+                  <td><label for="phone">電話:<%=rs.getString("電話")%></label></td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="sex">性別:<%=rs.getString("性別")%></label></td>
                   <td><label for="photo">戶籍資料圖片檔:</label></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="department">科系:</label></td>
-                  <td><label for="email">信箱:</label></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="classroom">班級:</label></td>
+              <tr><td><label for="department">科系:<%=rs.getString("科系")%></label></td>
+                  <td><label for="email">信箱:<%=rs.getString("信箱")%></label></td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="classroom">班級:<%=rs.getString("班級")%></label></td>
+  <%
+  }con.close();
+  %>
                   <td><label for="audit">審核狀態:</label>
                       <select name="audit" id="audit">
                           <option value="0" selected>請選擇</option>
@@ -59,6 +74,7 @@
                           <option value="未通過">未通過</option>
                       </select>
                   </td></tr><tr><td></td><td></td></tr> 
+
            </table> 
            <div class="button3">
            <input type="submit"  style="width:100px" value="儲存">

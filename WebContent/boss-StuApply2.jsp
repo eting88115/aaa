@@ -58,6 +58,8 @@
     </div>
          <div class="button4">
            <input type="submit"  style="width:150px" onclick="javascript:location.href='http://localhost:8011/aaa/boss-CheckList.jsp'" value="回宿舍審核清單">
+           <input type="submit" value="上一筆">
+           <input type="submit" value="下一筆">
          </div>
 </div>
 </div>
