@@ -271,10 +271,48 @@ input[id=TRpassword]{
 }
 .apply td{
 	border:5px;
-        padding:15px 15px;
+    padding:15px 15px;
 }
 .button4{
 	position:relative;
 	left: 620px;
 	top: 20px;
+}
+.post-file{
+	padding:20px;
+}
+.postfile1{
+   width:400px;
+   height:80px;
+   line-height:15px;
+   text-align:center;
+   position:relative;
+   left: 375px;
+}
+.postfile2{
+   width:400px;
+   height:80px;
+   line-height:15px;
+   text-align:center;
+   position:relative;
+   left: 310px;
+}
+.postfile3{
+   width:400px;
+   height:80px;
+   line-height:15px;
+   text-align:left;
+   position:relative;
+   left: 400px;
+}
+.postfile4{
+   width:400px;
+   height:80px;
+   line-height:15px;
+   text-align:center;
+   position:relative;
+   left: 320px;
+}
+.TDay{
+	margin-right: 100px
 }

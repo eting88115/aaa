@@ -51,31 +51,30 @@
     <div class="post" align="center">
       <h1 class="w3-text-teal"><b>新增公告</b></h1>
      </div>
-      <table>
-      <div class="choose-file">
-            <label for="choose-file">選擇檔案:</label>
-                 <input type="submit" value="選擇檔案">
-                <br>
-                <label for="TDay">選擇日期:</label>
-                 <div class="TDay" style=" margin-right: 100px">
-                 <input type="date" name="bday">
-                 </div>
-             </div>
-         <br>
-         <label for="name">公告名稱:</label>
-         <div class="update">
-         <input type="text" name="name" placeholder="請輸入公告名稱">
-         
-                 <input type="submit" value="上傳公告" class="w3-border-red w3-hover-text-red:hover">
-         </div>
-         <br>
-         
-        <object width="100%" height="500px" data="https://student.ntunhs.edu.tw/ezfiles/2/1002/attach/86/pta_30497_792350_35255.pdf"></object>
-        
-      </table>
+      
+        <div class="post-file" >
+        <form>
+                <div class="postfile1">
+                <label for="choose-file">選擇檔案:</label><input type="file" id="myfile" name="myfile">
+                </div>
+                <div class="postfile2">
+                <label for="TDay">選擇日期:</label><input type="date" name="bday">
+                </div>
+                <div class="postfile3">
+                <label for="name">公告名稱:</label>
+                       <div class="TDay">
+                       <input type="text" style="width: 450px; height:30px" name="name" placeholder="請輸入公告名稱">
+                       </div>
+                </div>
+                <div class="postfile4">
+                <input type="submit"  style="width:150px;height:30px" onclick="javascript:location.href=''" value="上傳公告">
+                </div>
+        </div>
+        </form>
+        </div>
+      
    </div> 
-   
- </div>
+  
 
  <!-- Footer -->
 <%@ include file="pageend.jsp" %>

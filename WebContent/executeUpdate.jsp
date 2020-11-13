@@ -11,7 +11,7 @@
 	// Connection con =DriverManager.getConnection("jdbc:odbc:dataBase") ;
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 		Connection con=DriverManager.getConnection(
-		"jdbc:ucanaccess://C:\\Users\\USER\\git\\aaa\\database.accdb;");
+		"jdbc:ucanaccess://C:\\Users\\yun ping\\Desktop\\新增資料夾\\aaa\\database.accdb;");
 	Statement smt= con.createStatement();
 	out.println("新增資料至person");
 	smt.executeUpdate("INSERT INTO personData(ID, personName, address,phone) VALUES('2', 'Joan','Taipei','000');");
