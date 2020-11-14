@@ -52,10 +52,12 @@
           <label for="find">搜索學號:</label>
           <input type="text" id="findAccount" class="findAccount" v-model="findAccount" placeholder="輸入搜索學號">
           <label for="find">搜索審核狀態:</label>
-              <select name="audit" id="audit">
+              <select name="audit" style="width:85px; height: 25px" id="audit">
                           <option value="0" selected>請選擇</option>
+                          <option value="待審核">待審核</option>
                           <option value="通過">通過</option>
                           <option value="未通過">未通過</option>
+                          <option value="">未通過</option>
               </select>
             <input type="submit"  value="搜索">
             <input type="reset" value="清除">
