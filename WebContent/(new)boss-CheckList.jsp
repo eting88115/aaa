@@ -83,19 +83,22 @@
                      <th class="text-center" scope="col" width="10%">姓名</th>
                      <th class="text-center" scope="col" width="30%">地址</th>
                      <th class="text-center" scope="col" width="15%">審核狀態</th>
-                  </tr> 
+                     <th class="text-center" scope="col" width="15%">操作</th>
+                  </tr>
 	<%
 	while(rs.next()){%>
                       <tr> 
-                         <td><%=rs.getString(10) %></td> 
-                         <td><%=rs.getString(8) %></td>
-                         <td><%=rs.getString(2) %></td>
-                         <td><%=rs.getString(9) %></td>
-                         <td><%=rs.getString(1) %></td>
-                         <td><%=rs.getString(11) %></td>
+                         <td><%=rs.getString("序號") %></td> 
+                         <td><%=rs.getString("班級") %></td>
+                         <td><%=rs.getString("學號") %></td>
+                         <td><%=rs.getString("姓名") %></td>
+                         <td><%=rs.getString("住址") %></td>
+                         <td><%=rs.getString("審核狀態") %></td>
+                         <td><button class="edit" data-toggle="modal" data-target="#layer">編輯</button></td>
                       </tr>
-   <%}	
-	con.close();%>
+    <%}	
+	con.close();
+	%>
              </table>
              </div>
     </div>
