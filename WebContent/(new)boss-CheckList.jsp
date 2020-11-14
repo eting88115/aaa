@@ -57,7 +57,6 @@
                           <option value="待審核">待審核</option>
                           <option value="通過">通過</option>
                           <option value="未通過">未通過</option>
-                          <option value="">未通過</option>
               </select>
             <input type="submit"  value="搜索">
             <input type="reset" value="清除">
