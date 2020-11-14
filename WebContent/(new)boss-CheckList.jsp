@@ -78,11 +78,11 @@
                <caption class="title">學生申請資料</caption>
                  
                   <tr> 
-                     <th class="text-center" scope="col" width="5%">序號</th> 
+                     <th class="text-center" scope="col" width="10%">序號</th> 
                      <th class="text-center" scope="col" width="10%">班級</th>
                      <th class="text-center" scope="col" width="15%">學號</th>
                      <th class="text-center" scope="col" width="10%">姓名</th>
-                     <th class="text-center" scope="col" width="25%">地址</th>
+                     <th class="text-center" scope="col" width="30%">地址</th>
                      <th class="text-center" scope="col" width="15%">審核狀態</th>
                   </tr> 
 	<%
