@@ -172,7 +172,7 @@ table.TRaccount td{
 	left: 65px;
 }
 table.FindApply {
-  width:85%;
+  width:95%;
   border-collapse:collapse;
   border: 1px solid brown;
   font-family:sans-serif;
@@ -191,7 +191,7 @@ table.FindApply td{
 }
 .FindApply{
 	position:relative;
-	left: 45px;
+	left: 15px;
 	top: 15px;
 }
 
@@ -347,4 +347,38 @@ input[id=TRpassword]{
 }
 input[id=findClass][id=findAccount]{
 	width:200px;
+}
+.tab-group{
+	margin-left:30px;
+}
+.tab-group label {
+  display:inline-block;
+  padding: 10px 30px;
+  border:1px solid #ccc;
+  border-bottom:none;
+  background-color: #ccc;
+  bottom:-1px;
+  position:relative;
+}
+.content-group {
+  border:1px solid #ccc;
+  padding: 20px;
+  height: 400px;
+  margin-left:30px;
+}
+.content {display:none;}
+
+#radio1:checked ~ .tab-group [for="radio1"],
+#radio2:checked ~ .tab-group [for="radio2"],
+#radio3:checked ~ .tab-group [for="radio3"],
+#radio4:checked ~ .tab-group [for="radio4"]{background-color: #fff;}
+
+#radio1:checked ~ .content-group .content1,
+#radio2:checked ~ .content-group .content2,
+#radio3:checked ~ .content-group .content3,
+#radio4:checked ~ .content-group .content4 {display:block}
+
+.panel-control {
+  position:absolute;
+  opacity:0;
 }

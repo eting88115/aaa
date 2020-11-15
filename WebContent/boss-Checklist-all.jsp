@@ -4,7 +4,7 @@
 <html lang="tc">
 <head>
 <meta charset="BIG5">
-<title>(new)boss-Checklist</title>
+<title>boss-Checklist-all</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
 <link rel="stylesheet" href="css\styles2.css" >
@@ -42,27 +42,32 @@
     </div>
           <div class="template" style="position: relative; height: 460px">
           
-    <hr>
-
-    <div class="findstu">
-      <form role="box" action="(new)boss-CheckList.jsp" method="get">
-        <div class="find-group">
-          <label for="find">搜尋班級:</label>
-          <input type="text" id="findClass" class="findClass" v-model="findClass" placeholder="輸入搜索班級">
-          <label for="find">搜索學號:</label>
-          <input type="text" id="findAccount" class="findAccount" v-model="findAccount" placeholder="輸入搜索學號">
-          <label for="find">搜索審核狀態:</label>
-              <select name="audit" style="width:85px; height: 25px" id="audit">
-                          <option value="0" selected>請選擇</option>
-                          <option value="待審核">待審核</option>
-                          <option value="通過">通過</option>
-                          <option value="未通過">未通過</option>
-              </select>
-            <input type="submit"  value="搜索">
-            <input type="reset" value="清除">
-        </div> 
-           
-        <%
+          <div class="panel-group">
+              <input type="radio" name="panel-radio" id="radio1" class="panel-control" checked>
+              <input type="radio" name="panel-radio" id="radio2" class="panel-control">
+              <input type="radio" name="panel-radio" id="radio3" class="panel-control">
+              <input type="radio" name="panel-radio" id="radio4" class="panel-control">
+                 <div class="tab-group">
+                   <label for="radio1" class="active">全部</label>
+                   <label for="radio2">待審核</label>
+                   <label for="radio3">通過</label>
+                   <label for="radio4">未通過</label>
+                 </div>
+                 <div class="content-group">
+                 <!-- 全部的內容 --->
+                   <div class="content content1">
+                      <hr>
+                         <div class="findstu">
+                                <form role="box" action="(new)boss-CheckList.jsp" method="get">
+                                    <div class="find-group">
+                                          <label for="find">搜尋班級:</label>
+                                             <input type="text" id="findClass" class="findClass" v-model="findClass" placeholder="輸入搜索班級">
+                                          <label for="find">搜索學號:</label>
+                                             <input type="text" id="findAccount" class="findAccount" v-model="findAccount" placeholder="輸入搜索學號">
+                                          <input type="submit"  value="搜索">
+                                          <input type="reset" value="清除">
+                                          </div>
+                                          <%
 	// Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 	// Connection con =DriverManager.getConnection("jdbc:odbc:dataBase") ;
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
@@ -101,24 +106,24 @@
 	%>
              </table>
              </div>
-    </div>
-    </div>
+    </div> 
+</div>
+                   <!-- 待審核的內容 --->
+                   <div class="content content2">content2</div>
+                   <!-- 通過的內容 --->
+                   <div class="content content3">content3</div>
+                   <!-- 未通過的內容 --->
+                   <div class="content content4">content4</div>
+                 </div>
+           </div>
+          
+          
+          
+</div>
+   </div>
  </div>
 </div>
 <br></br>
-<!-- Pagination -->
-  <div class="w3-center w3-padding-32" style="position:relative;left: 150px;">
-    <div class="w3-bar">
-      <a class="w3-button w3-black" href="#">1</a>
-      <a class="w3-button w3-hover-black" href="#">2</a>
-      <a class="w3-button w3-hover-black" href="#">3</a>
-      <a class="w3-button w3-hover-black" href="#">4</a>
-      <a class="w3-button w3-hover-black" href="#">5</a>
-      <a class="w3-button w3-hover-black" href="#">&raquo;</a>
-    </div>
-  </div>
-  
- 
 <!-- Footer -->
 <%@ include file="pageend.jsp" %>
-</html>
+</html
