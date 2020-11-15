@@ -35,7 +35,7 @@
 
   <div class="w3-row" style="height:400px">
     <div class="post" style=" margin-left: 600px">
-      <h1 class="w3-text-teal"><b>學生生活自治評鑑記點</b></h1>
+      <h1 class="w3-text-teal"><b>11學生生活自治評鑑記點</b></h1>
     </div>
         <table>
               <tr><td><label for="name">班級:</label><input type="text" name="name" placeholder="健四一A"></td>
