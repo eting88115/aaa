@@ -66,7 +66,8 @@
                                              <input type="text" id="findAccount" class="findAccount" v-model="findAccount" placeholder="輸入搜索學號">
                                           <input type="submit"  value="搜索">
                                           <input type="reset" value="清除">
-                                          </div>
+                                    </div>
+                      <hr>
                                           <%
 	// Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 	// Connection con =DriverManager.getConnection("jdbc:odbc:dataBase") ;
