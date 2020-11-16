@@ -61,12 +61,12 @@
                                 <form role="box" action="(new)boss-CheckList.jsp" method="get">
                                     <div class="find-group">
                                           <label for="find">搜尋班級:</label>
-                                             <input type="text" id="findClass" class="findClass" v-model="findClass" placeholder="輸入搜索班級">
+                                             <input type="text" id="findClass" class="findClass" placeholder="輸入搜索班級">
                                           <label for="find">搜索學號:</label>
-                                             <input type="text" id="findAccount" class="findAccount" v-model="findAccount" placeholder="輸入搜索學號">
+                                             <input type="text" id="findAccount" class="findAccount" placeholder="輸入搜索學號">
                                           <input type="submit"  value="搜索">
                                           <input type="reset" value="清除">
-                                    </div>
+                                          </div>
                       <hr>
                                           <%
 	// Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
