@@ -31,14 +31,14 @@
     <div class="post" style=" margin-left: 600px">
       <h1 class="w3-text-teal"><b>宿舍申請表</b></h1>
     </div>
-         <form method="post" action="GetStuApply.jsp">
+    <form method="post" action="GetStuApply.jsp">
          <table>
               <tr><td><label for="name">姓名:</label><input type="text" name="name" placeholder="請輸入姓名"></td>
                    <td><label for="address">住址:</label><input type="text" name="address" placeholder="請輸入住址"></td></tr><tr><td></td><td></td></tr>
               <tr><td><label for="account">學號:</label><input type="text" name="account" placeholder="請輸入學號"></td>
                   <td><label for="phone">電話:</label><input type="text" name="phone" placeholder="請輸入電話號碼"></td></tr><tr><td></td><td></td></tr>
               <tr><td><label for="sex">性別:</label><input type="radio" name="sex" value="男生" checked>男生<input type="radio" name="sex" value="女生">女生</td>
-                  <td><label for="photo">戶籍資料圖片檔:</label><input type="text" name="photo" placeholder="選取戶籍資料圖片檔"></td></tr><tr><td></td><td></td></tr>
+                  <td><label for="photo">戶籍資料圖片檔:</label><input type="file" id="myfile" name="myfile"></td></tr><tr><td></td><td></td></tr>
               <tr><td><label for="department">科系:</label>
                     <select name="department" id="department">
                           <option value="0" selected>請選擇</option>

@@ -21,22 +21,7 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
      <i class="fa fa-remove"></i>
   </a>
-  <h4 class="w3-bar-item"><b>陳莉莉教官 您好</b></h4>
-     <form action="">
-        <div class="activity-time">
-          <ul>
-            <li>寄出送出申請訊息</li>(4/11)<br>
-            <li>寄出公告申請結果/設定床位開放</li>(5/1)<br>
-            <li>學生選床位</li>(5/3~5/11)<br>
-            <li>開放候補申請</li>(5/12)<br>
-            <li>寄出候補結果</li>(5/19)<br>
-          </ul>
-          <div class="login-button">
-            <input type="submit" id="logout" value="登出"/>
-            <input type="hidden" name="Logout" value="true"/><br></br>
-          </div>
-        </div>
-     </form>
+     <%@ include file="left2.jsp" %>
  </nav>
  
 <!-- Header -->
@@ -64,8 +49,8 @@
                             <option value="zh-cn">申請未通過</option>
                             <option value="en">自訂範本</option>
                         </select>
-                                <div class="info zh-tw-info"><textarea style="width:450px;height:250px">***同學，恭喜您通過宿舍申請，邀請您5/1於校本部明倫館參與抽籤過程，若您抽中宿舍即可在5/3於本系統選擇您想要的床位，若未抽中宿舍，請不要氣餒，在5/13可參與我們候補申請，祝您好運！生輔組***老師上</textarea></div>
-                                <div class="info zh-cn-info"><textarea style="width:450px;height:250px">***同學，抱歉~你未通過宿舍申請。請下學期再參與申請，謝謝!生輔組***老師上</textarea></div>
+                                <div class="info zh-tw-info"><textarea style="width:450px;height:250px">同學您好，恭喜您通過宿舍申請，邀請您5/1於校本部明倫館參與抽籤過程，若您抽中宿舍即可在5/3於本系統選擇您想要的床位，若未抽中宿舍，請不要氣餒，在5/13可參與我們候補申請，祝您好運！生輔組上</textarea></div>
+                                <div class="info zh-cn-info"><textarea style="width:450px;height:250px">同學您好，抱歉~你未通過宿舍申請。請下學期再參與申請，謝謝!生輔組上</textarea></div>
                                 <div class="info en-info"><textarea style="width:450px;height:250px">***同學，xxx。生輔組***老師上</textarea></div>
                                 <span class="fn"><a href="javascript:;" id="memoDefault" style="position: relative;left: 480px">刪除內容</a></span>
                              <div class="custom" style="position: relative; left: 65px; top: 20px">

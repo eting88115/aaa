@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+    pageEncoding="utf-8" import="java.sql.*"%>
 <!DOCTYPE html>
 <html lang="tc">
 <head>
@@ -14,6 +14,7 @@
 </head>
 <body>
 
+
 <!-- Header --->
 <%@ include file="menu2.jsp" %>
 <!-- Sidebar -->
@@ -21,22 +22,7 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
      <i class="fa fa-remove"></i>
   </a>
-  <h4 class="w3-bar-item"><b>陳莉莉教官 您好</b></h4>
-     <form action="">
-        <div class="activity-time">
-          <ul>
-            <li>寄出送出申請訊息</li>(4/11)<br>
-            <li>寄出公告申請結果/設定床位開放</li>(5/1)<br>
-            <li>學生選床位</li>(5/3~5/11)<br>
-            <li>開放候補申請</li>(5/12)<br>
-            <li>寄出候補結果</li>(5/19)<br>
-          </ul>
-          <div class="login-button">
-            <input type="submit" id="logout" value="登出"/>
-            <input type="hidden" name="Logout" value="true"/><br></br>
-          </div>
-        </div>
-     </form>
+    <%@ include file="left2.jsp" %>
  </nav>
  
 <!-- Header -->
@@ -50,23 +36,37 @@
     <div class="form-fields d-grid"> 
     </div>
   </div>
-
+<%
+	// Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+	// Connection con =DriverManager.getConnection("jdbc:odbc:dataBase") ;
+	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+	Connection con=DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\yun ping\\Desktop\\新增資料夾\\aaa\\database.accdb;");
+	Statement smt= con.createStatement();
+	String sql = "SELECT * FROM studenApply ";
+	ResultSet rs = smt.executeQuery(sql);
+%>
   
-    <div class="post" align="center" style="margin-left:110px">
+    <div class="post" align="center" style="margin-left:150px">
       <h1 class="w3-text-teal"><b>宿舍申請表</b></h1>
     </div>
     <div class="apply">
          <form method="post" action="boss-StuApply2.jsp">
          <table border="1" style="margin-left:50px; width: 700px;height: 300px">
-              <tr><td><label for="name">姓名:</label></td>
-                  <td><label for="address">住址:</label></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="account">學號:</label></td>
-                  <td><label for="phone">電話:</label></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="sex">性別:</label></td>
+<%
+while(rs.next())
+{%>
+              <tr><td><label for="name">姓名:<%=rs.getString("姓名")%></label></td>
+                  <td><label for="address">住址:<%=rs.getString("住址")%></label></td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="account">學號:<%=rs.getString("學號")%></label></td>
+                  <td><label for="phone">電話:<%=rs.getString("電話")%></label></td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="sex">性別:<%=rs.getString("性別")%></label></td>
                   <td><label for="photo">戶籍資料圖片檔:</label></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="department">科系:</label></td>
-                  <td><label for="email">信箱:</label></td></tr><tr><td></td><td></td></tr>
-              <tr><td><label for="classroom">班級:</label></td>
+              <tr><td><label for="department">科系:<%=rs.getString("科系")%></label></td>
+                  <td><label for="email">信箱:<%=rs.getString("信箱")%></label></td></tr><tr><td></td><td></td></tr>
+              <tr><td><label for="classroom">班級:<%=rs.getString("班級")%></label></td>
+  <%
+  }con.close();
+  %>
                   <td><label for="audit">審核狀態:</label>
                       <select name="audit" id="audit">
                           <option value="0" selected>請選擇</option>
@@ -74,6 +74,7 @@
                           <option value="未通過">未通過</option>
                       </select>
                   </td></tr><tr><td></td><td></td></tr> 
+
            </table> 
            <div class="button3">
            <input type="submit"  style="width:100px" value="儲存">
