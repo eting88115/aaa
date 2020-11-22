@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="tc">
 <head>
-<meta charset="BIG5">
+<meta charset="utf-8">
 <title>boss-Checklist-all</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\styles.css" >
@@ -53,10 +53,9 @@
                    <label for="radio3">通過</label>
                    <label for="radio4">未通過</label>
                  </div>
+                 
                  <div class="content-group">
-                 <!-- 全部的內容 --->
-                   <div class="content content1">
-                      <hr>
+                 <hr>
                          <div class="findstu">
                                 <form role="box" action="(new)boss-CheckList.jsp" method="get">
                                     <div class="find-group">
@@ -72,7 +71,7 @@
 	// Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 	// Connection con =DriverManager.getConnection("jdbc:odbc:dataBase") ;
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-	Connection con=DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\yun ping\\Desktop\\新增資料夾\\aaa\\WebContent\\database.accdb;");
+	Connection con=DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\yun ping\\Desktop\\2020.11.22最新\\aaa\\WebContent\\database.accdb;");
 	Statement smt= con.createStatement();
 	String sql = "SELECT * FROM studenApply ";
 	ResultSet rs = smt.executeQuery(sql);
@@ -80,7 +79,7 @@
       </form>
             <div class="FindApply">
             <table class="FindApply">
-               <caption class="title">學生申請資料</caption>
+               <caption class="title">學生申請資料-全部</caption>
                  
                   <tr> 
                      <th class="text-center" scope="col" width="10%">序號</th> 
@@ -102,19 +101,22 @@
                          <td><%=rs.getString("審核狀態") %></td>
                          <td><button class="edit" data-toggle="modal" data-target="#layer">編輯</button></td>
                       </tr>
-    <%}	
-	con.close();
-	%>
              </table>
              </div>
     </div> 
 </div>
-                   <!-- 待審核的內容 --->
-                   <div class="content content2">content2</div>
+                 <!-- 待審核的內容 --->
+                   <div class="content content2">
+                    <%@ include file="boss-Checklist-waiting.jsp" %>
+                   </div>
                    <!-- 通過的內容 --->
-                   <div class="content content3">content3</div>
+                   <div class="content content3">
+                   <%@ include file="boss-Checklist-Pass.jsp" %>
+                   </div>
                    <!-- 未通過的內容 --->
-                   <div class="content content4">content4</div>
+                   <div class="content content4">
+                   <%@ include file="boss-Checklist-NoPass.jsp" %>
+                   </div>
                  </div>
            </div>
           
@@ -125,6 +127,9 @@
  </div>
 </div>
 <br></br>
+ <%}	
+	con.close();
+	%>
 <!-- Footer -->
 <%@ include file="pageend.jsp" %>
 </html>

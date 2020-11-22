@@ -189,7 +189,7 @@ table.FindApply td{
   text-align: center;
   border: 1px solid #FF5151;
 }
-.FindApply{
+.FindApply, .FindApply2, .FindApply3, .FindApply4{
 	position:relative;
 	left: 15px;
 	top: 15px;
